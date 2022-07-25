@@ -1,4 +1,4 @@
-Anton-Paar Rheometer Set-Up
+Anton-Paar Rheometer
 ===========================
 
 Initial Set-Up
