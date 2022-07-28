@@ -49,5 +49,30 @@ Measurement Setup: Measuring R1/T1 spectrum at 7MHz.
 4. Set Maximum T1 to what you think T1 is (if you don't know, then assume 0.2s i.e. 1s/5).
 5. Click GUN - wait for measurement to finish.
 6. Click SAVE
-7. Click Evalualtion Dialog. Choose RAM from list on right hand side. 
-8. If 
+7. Click Evaluation Dialog. Choose RAM from list on right hand side. 
+8. If the measured T1 is much longer (>120%) than your initial guess of T1Max then repeat this section. Similarly, if T1 is much shorter than you thought it would be (<50%) repeat this section.
+
+Measurement Setup: Measuring R1/T1 Dispersion Profile
+-----------------------------------------------------
+
+1. Navigate to Actions => Profile Wizard. 
+2. Click Synchronise Parameters at the bottom of the wizard to copy over the parameters that we set up previously. 
+3. Change the run parameters (frequency range, number of points, number of repetitions per point etc) on the right hand side of the wizard.
+4. Set filename via Export File => Change. 
+
+.. note::
+    The total run-time for an experiment will be (approximately) = Profile Points x Repetition Points x Tau Blocks x Delay Time. 
+
+5. Click execute in the wizard to start the run. 
+6. The software will execute the first experiment (at the first frequency) and tell you whether it recommends you continue or not. If you have gone through the setup steps correctly this should work... 
+7. When the experiment has finished a table of data with the Frequency, T1, R1 etc will be output as a .sef file. 
+
+Shut Down
+---------
+1. Turn off heater.
+2. Turn off Magenet from software
+3. Turn off TX. 
+4. Turn off Galden recirculator. 
+5. Turn off air. 
+
+

@@ -18,6 +18,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Novocontrol Broadband Dielectric Spectrometer" href="novocontrol-dielectric.html" />
     <link rel="prev" title="Anton-Paar Rheometer" href="anton-paar.html" /> 
 </head>
 
@@ -44,8 +45,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#software-setup">Software Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#measurement-setup-correcting-the-frequecy-offset-f1">Measurement Setup: Correcting the frequecy offset, F1.</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#measurement-setup-measuring-r1-t1-spectrum-at-7mhz">Measurement Setup: Measuring R1/T1 spectrum at 7MHz.</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#measurement-setup-measuring-r1-t1-dispersion-profile">Measurement Setup: Measuring R1/T1 Dispersion Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shut-down">Shut Down</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="novocontrol-dielectric.html">Novocontrol Broadband Dielectric Spectrometer</a></li>
 </ul>
 
         </div>
@@ -126,8 +130,44 @@
 </section>
 <section id="measurement-setup-measuring-r1-t1-spectrum-at-7mhz">
 <h2>Measurement Setup: Measuring R1/T1 spectrum at 7MHz.<a class="headerlink" href="#measurement-setup-measuring-r1-t1-spectrum-at-7mhz" title="Permalink to this headline"></a></h2>
-<p>1. Change experiment to “NP/S” on the Main tab.
-2.</p>
+<ol class="arabic simple">
+<li><p>Change experiment to “NP/S” on the Main tab.</p></li>
+<li><p>Make sure Recycle Delay is still roughly 5T1 (or 1s if you don’t know)</p></li>
+<li><p>Set Relaxation Field to 7 MHz (units are MHz)</p></li>
+<li><p>Set Maximum T1 to what you think T1 is (if you don’t know, then assume 0.2s i.e. 1s/5).</p></li>
+<li><p>Click GUN - wait for measurement to finish.</p></li>
+<li><p>Click SAVE</p></li>
+<li><p>Click Evaluation Dialog. Choose RAM from list on right hand side.</p></li>
+<li><p>If the measured T1 is much longer (&gt;120%) than your initial guess of T1Max then repeat this section. Similarly, if T1 is much shorter than you thought it would be (&lt;50%) repeat this section.</p></li>
+</ol>
+</section>
+<section id="measurement-setup-measuring-r1-t1-dispersion-profile">
+<h2>Measurement Setup: Measuring R1/T1 Dispersion Profile<a class="headerlink" href="#measurement-setup-measuring-r1-t1-dispersion-profile" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Navigate to Actions =&gt; Profile Wizard.</p></li>
+<li><p>Click Synchronise Parameters at the bottom of the wizard to copy over the parameters that we set up previously.</p></li>
+<li><p>Change the run parameters (frequency range, number of points, number of repetitions per point etc) on the right hand side of the wizard.</p></li>
+<li><p>Set filename via Export File =&gt; Change.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The total run-time for an experiment will be (approximately) = Profile Points x Repetition Points x Tau Blocks x Delay Time.</p>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>Click execute in the wizard to start the run.</p></li>
+<li><p>The software will execute the first experiment (at the first frequency) and tell you whether it recommends you continue or not. If you have gone through the setup steps correctly this should work…</p></li>
+<li><p>When the experiment has finished a table of data with the Frequency, T1, R1 etc will be output as a .sef file.</p></li>
+</ol>
+</section>
+<section id="shut-down">
+<h2>Shut Down<a class="headerlink" href="#shut-down" title="Permalink to this headline"></a></h2>
+<ol class="arabic simple">
+<li><p>Turn off heater.</p></li>
+<li><p>Turn off Magenet from software</p></li>
+<li><p>Turn off TX.</p></li>
+<li><p>Turn off Galden recirculator.</p></li>
+<li><p>Turn off air.</p></li>
+</ol>
 </section>
 </section>
 
@@ -136,6 +176,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="anton-paar.html" class="btn btn-neutral float-left" title="Anton-Paar Rheometer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="novocontrol-dielectric.html" class="btn btn-neutral float-right" title="Novocontrol Broadband Dielectric Spectrometer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

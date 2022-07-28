@@ -1,0 +1,13 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Anton\sphinxhyphen {}Paar Rheometer}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Initial Set\sphinxhyphen {}Up}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Calibration}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Stelar FFC NMR}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hardware Setup}{3}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Software Setup}{3}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Measurement Setup: Correcting the frequecy offset, F1.}{4}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Measurement Setup: Measuring R1/T1 spectrum at 7MHz.}{4}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Measurement Setup: Measuring R1/T1 Dispersion Profile}{4}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Shut Down}{5}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Novocontrol Broadband Dielectric Spectrometer}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Setting up a measurement in software}{7}{section.3.1}%
