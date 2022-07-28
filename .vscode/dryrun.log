@@ -1,0 +1,5 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory 'd:/Work Stuff/SMP-lab-documentation'
+sphinx-build -M help "_source/" "_build/"  
+make: Leaving directory 'd:/Work Stuff/SMP-lab-documentation'
+ 
