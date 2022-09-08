@@ -1,4 +1,4 @@
-TA Q20
+TA Q20 DSC
 =============
 
 Turn on cooling system

@@ -6,6 +6,9 @@
 Welcome to SMP Labs's documentation!
 ====================================
 
+This set of documentation contains standard operating procedures and guides for using SMP equipment, laboratories and proceses therein. 
+The documentation is *only* meant to suppliment proper training: you should always be trained by a competent user before attempting to use a piece of equipment. 
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -15,8 +18,7 @@ Welcome to SMP Labs's documentation!
    novocontrol-dielectric
    dscQ20
 
-This set of documentation contains standard operating procedures and guides for using SMP equipment, laboratories and proceses therein. 
-The documentation is *only* meant to suppliment proper training: you should always be trained by a competent user before attempting to use a piece of equipment. 
+
 
 
 .. Indices and tables
