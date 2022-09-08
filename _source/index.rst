@@ -13,6 +13,7 @@ Welcome to SMP Labs's documentation!
    anton-paar
    stelar-ffc
    novocontrol-dielectric
+   dscQ20
 
 This set of documentation contains standard operating procedures and guides for using SMP equipment, laboratories and proceses therein. 
 The documentation is *only* meant to suppliment proper training: you should always be trained by a competent user before attempting to use a piece of equipment. 
