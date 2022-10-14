@@ -17,6 +17,7 @@ The documentation is *only* meant to suppliment proper training: you should alwa
    stelar-ffc
    novocontrol-dielectric
    dscQ20
+   microscope
 
 
 
