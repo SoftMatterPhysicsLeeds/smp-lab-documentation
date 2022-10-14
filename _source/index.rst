@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SMP Labs's documentation!
-====================================
+SMP Laboratory Documentation
+============================
 
 This set of documentation contains standard operating procedures and guides for using SMP equipment, laboratories and proceses therein. 
 The documentation is *only* meant to suppliment proper training: you should always be trained by a competent user before attempting to use a piece of equipment. 
@@ -17,6 +17,7 @@ The documentation is *only* meant to suppliment proper training: you should alwa
    stelar-ffc
    novocontrol-dielectric
    dscQ20
+   universal-analysis
    microscope
 
 
