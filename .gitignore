@@ -1,2 +1,4 @@
 _build
-.vscode/
+**_build
+.vscode
+_build/doctrees/environment.pickle
