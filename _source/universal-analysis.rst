@@ -18,8 +18,8 @@ To analyse glass transition steps go to **Analyze>Glass Transition**.  This will
 General Tips/Tricks
 -------------------
 
-    - To control what is displayed when analysing peak and steps go to Analyze>Options and you can select what will be displayed for steps or peaks when analysis is performed
-    - To see details about the sample, such as sample mass go to Edit>File Information
-    - To see details about how the run was performed go to View>Method Log
-    - To view the data as Heat Capacity (where applicable) go to Graph>Signals and select Heat Capacity in the y-axis dropdown menu
-	- To overlay data from two runs go to Graph>Overlay>Auto Configure and then select the graphs you want to overlay and these can be viewed on a single plot (this is good for comparing)
+    - To control what is displayed when analysing peak and steps go to **Analyze>Options** and you can select what will be displayed for steps or peaks when analysis is performed
+    - To see details about the sample, such as sample mass go to **Edit>File Information**
+    - To see details about how the run was performed go to **View>Method Log**
+    - To view the data as Heat Capacity (where applicable) go to **Graph>Signals** and select Heat Capacity in the y-axis dropdown menu
+	- To overlay data from two runs go to **Graph>Overlay>Auto Configure** and then select the graphs you want to overlay and these can be viewed on a single plot (this is good for comparing)
