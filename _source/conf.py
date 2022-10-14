@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'SMP Labs'
+project = 'SMP Lab Docs'
 copyright = '2022, Daniel Baker'
 author = 'Daniel Baker'
 
