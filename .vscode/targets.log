@@ -1,34 +1,33 @@
 make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+'\\ds.leeds.ac.uk\staff\staff9\phydlb\Programming\PYTHON\SMP-lab-documentation'
+CMD.EXE was started with the above path as the current directory.
+UNC paths are not supported.  Defaulting to Windows directory.
+
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for Windows32
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Thu Jul 28 09:56:06 2022
+# Make data base, printed on Fri Oct 14 11:48:54 2022
 
 # Variables
 
 # environment
 SYSTEMDRIVE = C:
 # environment
+JAVA_HOME = C:\Program Files\Amazon Corretto\jdk1.8.0_212
+# environment
 LC_ALL = C
 # environment
-USERPROFILE = C:\Users\danli
+USERPROFILE = C:\Users\phydlb
 # environment
-VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+LOCALAPPDATA = C:\Users\phydlb\AppData\Local
 # environment
-MOZ_CRASHREPORTER_DATA_DIRECTORY = C:\Users\danli\AppData\Roaming\Mozilla\Firefox\Crash Reports
-# environment
-LOCALAPPDATA = C:\Users\danli\AppData\Local
-# environment
-QT_PLUGIN_PATH = C:\Anaconda3\Lib\site-packages\PySide2\plugins\
-# environment
-SHIM_MCCOMPAT = 0x800000000
-# environment
-VSCODE_CWD = C:\Program Files\Microsoft VS Code
+VSCODE_CWD = \\ds.leeds.ac.uk\staff\staff9\phydlb\Programming\PYTHON\SMP-lab-documentation
 # environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
@@ -36,15 +35,17 @@ SYSTEMROOT = C:\WINDOWS
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
-# environment
-MOZ_CRASHREPORTER_STRINGS_OVERRIDE = C:\Program Files\Mozilla Firefox\browser\crashreporter-override.ini
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files\Thycotic\Powershell\
 # default
 MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+# environment
+USERDNSDOMAIN = DS.LEEDS.AC.UK
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12588_GRLVTDORTQEZGURC
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1464_TDHFJQCLQCFAOMUJ
+# environment
+ONEDRIVECOMMERCIAL = C:\Users\phydlb\OneDrive - University of Leeds
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -56,33 +57,33 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\danli\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = C:\Users\phydlb\AppData\Roaming\Code\CachedData\74b1f979648cc44d385a2286793c226e611f59e7
 # environment
 LANG = C
 # default
 .LOADED := 
 # environment
-TMP = C:\Users\danli\AppData\Local\Temp
+TMP = C:\Users\phydlb\AppData\Local\Temp
 # default
 .INCLUDE_DIRS = .
+# environment
+IMAGETYPE = SCCM - BootMedia - UFD
 # environment
 PROCESSOR_ARCHITEW6432 = AMD64
 # makefile
 MAKEFLAGS = pqrR
 # environment
-ONEDRIVE = C:\Users\danli\OneDrive
+ONEDRIVE = C:\Users\phydlb\OneDrive - University of Leeds
 # environment
-POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
-# makefile (from 'Makefile', line 8)
-SOURCEDIR = _source/
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Enterprise
 # makefile
-CURDIR := d:/Work Stuff/SMP-lab-documentation
+CURDIR := C:/Windows
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+NLTK_DATA = C:\ProgramData\Anaconda3\nltk_data
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
-# environment
-GS_PROG = C:\Program Files (x86)\gs\gs9.22\bin\gswin32c.exe
 # environment
 PROGRAMFILES = C:\Program Files (x86)
 # environment
@@ -93,34 +94,34 @@ MFLAGS = -pqrR
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST := Makefile
+# makefile
+MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 12588
+IMAGETIER3 = Windows10_Upgrade_20H2
 # environment
-DASHLANE_DLL_DIR = C:\Users\danli\AppData\Roaming\Dashlane\6.1907.0.17833\bin\Firefox_Extension\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\components;C:\Users\danli\AppData\Roaming\Dashlane\6.1907.0.17833\ucrt;C:\Users\danli\AppData\Roaming\Dashlane\6.1907.0.17833\bin\Qt;C:\Users\danli\AppData\Roaming\Dashlane\6.1907.0.17833\bin\Ssl
+VSCODE_PID = 1464
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# environment
+POSH_THEMES_PATH = C:\Users\phydlb\AppData\Local\Programs\oh-my-posh\themes
 # automatic
 *F = $(notdir $*)
+# environment
+AWRD_LICENSE_FILE = @awr-server1.leeds.ac.uk
 # automatic
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# environment
-ONEDRIVECONSUMER = C:\Users\danli\OneDrive
 # default
 MAKE_HOST := Windows32
-# environment
-MOZ_CRASHREPORTER_RESTART_ARG_0 = C:\Program Files\Mozilla Firefox\firefox.exe
 # environment
 PROGRAMDATA = C:\ProgramData
 # default
 SHELL := sh.exe
 # environment
-HOMEPATH = \Users\danli
+HOMEPATH = \
 # default
 MAKECMDGOALS := all
 # environment
@@ -134,13 +135,15 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = C:\Program Files\Mozilla Firefox;C:\Anaconda3;C:\Anaconda3\Library\mingw-w64\bin;C:\Anaconda3\Library\usr\bin;C:\Anaconda3\Library\bin;C:\Anaconda3\Scripts;c:\program files\intel\icls client\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files\MATLAB\R2013a\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Anaconda3\Lib\site-packages\PySide2;C:\Program Files\Git\cmd;C:\Program Files\GitHub CLI\;C:\ProgramData\chocolatey\bin;C:\Program Files\Neovim\/bin;C:\Program Files\PowerShell\7\;C:\Users\danli\.cargo\bin;C:\Users\danli\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\danli\AppData\Local\Microsoft\WindowsApps;C:\msys64\mingw64\bin;;C:\Users\danli\AppData\Local\Programs\Julia-1.7.3\bin
+PATH = C:\Program Files\ImageMagick-7.1.0-Q16-HDRI;C:\Program Files\Amazon Corretto\jdk1.8.0_212\bin;C:\Program Files (x86)\Amazon Corretto\jdk1.8.0_212\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\R2019a\runtime\win64;C:\Program Files\MATLAB\R2019a\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Pandoc\;C:\Program Files\MiKTeX\miktex\bin\x64\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Neovim\/bin;%NVM_HOME%;%NVM_SYMLINK%;C:\Program Files\CMake\bin;C:\Program Files\LLVM\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Users\phydlb\.cargo\bin;C:\Users\phydlb\scoop\shims;C:\Users\phydlb\AppData\Local\Microsoft\WindowsApps;C:\Users\phydlb\AppData\Local\Programs\Git\cmd;C:\msys64\mingw64\bin;C:\Users\phydlb\AppData\Local\Programs\oh-my-posh\bin;C:\Users\phydlb\.dotnet\tools;C:\Users\phydlb\.rustup\toolchains;C:\Program Files\Neovim\bin;C:\Users\phydlb\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\neovide\target\release;C:\Users\phydlb\AppData\Local\Programs\Julia-1.8.0\bin;C:\Users\phydlb\AppData\Roaming\Python\Python39\Scripts;C:\Program Files\SVG2PNG;
 # environment
-COMPUTERNAME = DESKTOP-PM3EB3O
+ZES_ENABLE_SYSMAN = 1
+# environment
+COMPUTERNAME = UOL-PC-052023
+# environment
+IMAGETIER1 = CAP 210330 10.0.18362
 # default
 MAKEFILES := 
-# makefile (from 'Makefile', line 7)
-SPHINXBUILD = sphinx-build
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -148,13 +151,15 @@ NIEXTCCOMPILERSUPP = C:\Program Files (x86)\National Instruments\Shared\External
 # environment
 PROMPT = $P$G
 # environment
-CHOCOLATEYLASTPATHUPDATE = 133001175685713933
+CHOCOLATEYLASTPATHUPDATE = 133032102239074438
 # environment
 VXIPNPPATH64 = C:\Program Files\IVI Foundation\VISA\
 # environment
-LOGONSERVER = \\DESKTOP-PM3EB3O
+LOGONSERVER = \\ADC02
 # environment
-USERNAME = danli
+USERNAME = phydlb
+# environment
+HOMESHARE = \\ds.leeds.ac.uk\staff\staff9\phydlb
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # automatic
@@ -168,38 +173,41 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
-USERDOMAIN = DESKTOP-PM3EB3O
+USERDOMAIN = DS
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 OS = Windows_NT
-# environment
-__COMPAT_LAYER = DetectorsAppHealth
 # makefile
-.DEFAULT_GOAL := help
+.DEFAULT_GOAL := 
+# environment
+NVM_HOME = C:\Users\phydlb\AppData\Roaming\nvm
 # default
 MAKE_VERSION := 4.3
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
-# makefile (from 'M 
-akefile', line 6)
-SPHINXOPTS = 
 # environment
-USERDOMAIN_ROAMINGPROFILE = DESKTOP-PM3EB3O
+UATDATA = C:\WINDOWS\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77
 # environment
-NUMBER_OF_PROCESSORS = 8
+USERDOMAIN_ROAMINGPROFILE = DS
+# environment
+NUMBER_OF_PROCESSORS = 12
 # environment
 PUBLIC = C:\Users\Public
 # environment
 ASL.LOG = Destination=file
 # environment
-APPDATA = C:\Users\danli\AppData\Roaming
+PYTHONPATH = C:\ProgramData\Anaconda3\
 # environment
-MOZ_CRASHREPORTER_PING_DIRECTORY = C:\Users\danli\AppData\Roaming\Mozilla\Firefox\Pending Pings
+APPDATA = C:\Users\phydlb\AppData\Roaming
 # environment
-HOMEDRIVE = C:
+HOMEDRIVE = M:
+# environment
+NVM_SYMLINK = C:\Program Files\nodejs
 # environment
 PROCESSOR_ARCHITECTURE = x86
+# environment
+SAPLOGON_INI_FILE = c:\windows\Saplogon.ini
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -207,11 +215,15 @@ VXIPNPPATH = C:\Program Files (x86)\IVI Foundation\VISA\
 # environment
 COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
 # environment
+IMAGETIER0 = LDS - DEP2104 x64 WIN10 (1909)
+# environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-TEMP = C:\Users\danli\AppData\Local\Temp
+TEMP = C:\Users\phydlb\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\4873041b6934060a9540318a2346b291-1.69.2-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\bbd22e5ea974622f83ad5c4e4ed3592b-1.71.2-main-sock
+# environment
+IMAGETIER2 = Machine build with Office 2016
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -222,18 +234,18 @@ SUFFIXES :=
 ALLUSERSPROFILE = C:\ProgramData
 # environment
 SESSIONNAME = Console
-# environment
-MOZ_CRASHREPORTER_EVENTS_DIRECTORY = C:\Users\danli\AppData\Roaming\Mozilla\Firefox\Crash Reports\events
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
-PROCESSOR_REVISION = 9e09
-# makefile (from 'Makefile', line 9)
-BUILDDIR = _build/
+PROCESSOR_REVISION = a701
 # environment
-PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+DEFLOGDIR = C:\ProgramData\McAfee\Endpoint Security\Logs
+# environment
+CHOCOLATEYTOOLSLOCATION = C:\tools
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=110/1024=11%, Rehash=0, Collisions=11/147=7%
+# Load=114/1024=11%, Rehash=0, Collisions=10/138=7%
 
 # Pattern-specific Variable Values
 
@@ -241,25 +253,22 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
 
 # Directories
 
-# . (key d:/Work Stuff/SMP-lab-documentation, mtime 1658997275): 9 files, no impossibilities.
+# . (key C:/Windows, mtime 1642416770): 139 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 139 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-%: Makefile
-#  recipe to execute (from 'Makefile', line 20):
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+# No implicit rules.
 
-# 1 implicit rules, 0 (0.0%) terminal.
 # Files
 
+# Not a target:
 Makefile:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
+#  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Successfully updated.
+#  Failed to be updated.
 
 # Not a target:
 .DEFAULT:
@@ -267,62 +276,48 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
-all: Makefile
+# Not a target:
+all:
 #  Command line target.
 #  Implicit rule search has been done.
-#  Implicit/static pattern stem: 'all'
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := all 
+#  Failed to be updated.
 
-# automatic
-# * := all
-# automatic
-# < := Makefile
-# automatic
-# + := Makefile
-# automatic
-# % := 
-# automatic
-# ^ := Makefile
-# automatic
-# ? := Makefile
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=5/17=29%
-#  recipe to execute (from 'Makefile', line 20):
-	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
-
-help:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
+# Not a target:
+makefile.mak:
+#  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 13):
-	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+#  File has been updated.
+#  Failed to be updated.
 
-.PHONY: help Makefile
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/21=0%
+# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 15 / storage = 99 B / avg = 6 B
-# current buf: size = 8174 B / used = 99 B / count = 15 / avg = 6 B
+# strcache buffers: 1 (0) / strings = 146 / storage = 1772 B / avg = 12 B
+# current buf: size = 8174 B / used = 1772 B / count = 146 / avg = 12 B
 
-# strcache performance: lookups = 27 / hit rate = 44%
+# strcache performance: lookups = 149 / hit rate = 2%
 # hash-table stats:
-# Load=15/8192=0%, Rehash=0, Collisions=0/27=0%
-# Finished Make data base on Thu Jul 28 09:56:06 2022
+# Load=146/8192=2%, Rehash=0, Collisions=3/149=2%
+# Finished Make data base on Fri Oct 14 11:48:54 2022
 
  

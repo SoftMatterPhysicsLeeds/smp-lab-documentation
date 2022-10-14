@@ -20,12 +20,21 @@ Sample preparation
 6. Pull the lever until it hits the mechanical 'stop'. **This shouldn't require much force at all**
 7. Take out the bottom die and place it on the 'post' at the front of the press. This should pop out the filled, and sealed, DSC pan.
 8. Measure the weight of the filled pan (should just display the weight of the sample since the balance was tared with the pan and lid on).
+9. Place the filled sample pan into an autosampler slot (doesn't matter which but make sure you know which). 
 
-Set up measurement
-------------------
+Set up measurement in the software
+----------------------------------
 
-1. Place the filled sample pan into an autosampler slot (doesn't matter which but make sure you know which). 
+You should fill in all the relevant information in the three central tabs. 
+
+1. Fill in the basic sample information in the first tab including: 
+    
+    - sample name
+    - sample mass
+    - slot number
+    
 2. 
+ 
 
 
 
