@@ -1,5 +1,6 @@
 TA Universal Analysis
 =====================
+Author: Caitlin Probert
 
 Analysing Peaks
 ---------------
