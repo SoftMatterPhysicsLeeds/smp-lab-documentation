@@ -1,5 +1,6 @@
 Microscope Alignment
 ====================
+Author: Emily Cooper
 
 This document includes instructions on how to setup a microscope, as an aid for people who have already been trained to set up a microscope. This document **does not replace training on a microscope**.
 

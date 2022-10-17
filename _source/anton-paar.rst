@@ -1,5 +1,6 @@
 Anton-Paar Rheometer
 ===========================
+Author: Korel Bayram
 
 Initial Set-Up
 --------------
