@@ -10,7 +10,7 @@ This set of documentation contains standard operating procedures and guides for 
 The documentation is *only* meant to suppliment proper training: you should always be trained by a competent user before attempting to use a piece of equipment. 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    anton-paar
