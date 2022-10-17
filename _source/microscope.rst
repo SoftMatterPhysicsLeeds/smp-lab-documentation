@@ -64,4 +64,4 @@ This document includes instructions on how to setup a microscope, as an aid for 
 
 11.	Every time you **change microscope objective**, you need to **repeat** all the above steps to ensure that your microscope is properly **focused**.
 
-**Happy microscopy!**
+
