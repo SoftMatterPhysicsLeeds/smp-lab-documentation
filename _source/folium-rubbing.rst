@@ -17,7 +17,7 @@ Before using the rubbing machine, ensure you have prepared substrates with an al
 **Alignment layer examples** (planar): PVA, Polyimide, Polystyrene etc.
 
 2. Machine Start-Up
-------------------
+-------------------
 
 a. Turn on the RM at the mains (Figure 2a).
 b. To the right of the RM, open the vacuum tap by rotating **anti-clockwise** (open direction indicated with ‘+’ on tap head).
@@ -35,7 +35,7 @@ g.	Once the stage has returned, the control box will now display ‘RUB’. The 
     :align: center
 
 3. Experimental Setup
---------------------
+---------------------
 
 a.	Once the ‘RUB’ button is pressed, the ‘carriage’ or stage speed selection window will appear. This allows you to specify the sample stage translation speed in **cm/s**.
 b.	To change the speed, press the bottom-left field, indicated by the black arrow. The value in the field will begin blinking and the numerical keyboard will appear, which means it can now be changed.
