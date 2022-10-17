@@ -1,5 +1,6 @@
 Folium Rubbing Machine
 ======================
+Author: Tom Moorhouse
 
 This document includes instructions on how to set up and run the Folium rubbing machine (RM), as an aid for people who have already been trained. This document **does not replace training**.
 
