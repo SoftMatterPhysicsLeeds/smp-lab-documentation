@@ -1,5 +1,6 @@
 Stelar FFC NMR 
 ==============
+Author: Dan Baker
 
 Hardware Setup
 --------------

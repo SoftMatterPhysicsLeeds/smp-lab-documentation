@@ -20,6 +20,7 @@ The documentation is *only* meant to suppliment proper training: you should alwa
    universal-analysis
    microscope
    folium-rubbing
+   bruker-nmr-diffusion
 
 
 
