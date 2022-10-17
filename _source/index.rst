@@ -14,13 +14,13 @@ The documentation is *only* meant to suppliment proper training: you should alwa
    :caption: Contents:
 
    anton-paar
-   stelar-ffc
-   novocontrol-dielectric
-   dscQ20
-   universal-analysis
-   microscope
-   folium-rubbing
    bruker-nmr-diffusion
+   dscQ20
+   folium-rubbing
+   microscope
+   novocontrol-dielectric
+   stelar-ffc
+   universal-analysis
 
 
 
