@@ -15,11 +15,11 @@ The documentation is *only* meant to suppliment proper training: you should alwa
 
    anton-paar
    bruker-nmr-diffusion
-   dscQ20
    folium-rubbing
    microscope
    novocontrol-dielectric
    stelar-ffc
+   dscQ20
    universal-analysis
 
 
