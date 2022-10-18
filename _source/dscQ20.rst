@@ -1,12 +1,20 @@
 TA Q20 DSC
 =============
 
+Author: Dan Baker
+
 Turn on cooling system
 ---------------------------------
 
 1. Open the nitrogen tap (turn valve so that it is parallel to the pipe). The pressure should already be set. 
 2. Switch on the RSC90 (cooling system box) using the green switch. 
-3. Activate the cooling system by navigating to **Control** -> **Event** and clicking **On**.  
+3. Activate the cooling system by navigating to **Control** -> **Event** and clicking **On** in the control software.  
+
+.. figure:: _static/dsc/cooling_system_turnon.png
+    :align: center
+
+.. note:: 
+    If the control software is not open already, open **TA Instrument Explorer** and double click on the DSC image.
 
 
 Sample preparation
@@ -25,15 +33,35 @@ Sample preparation
 Set up measurement in the software
 ----------------------------------
 
-You should fill in all the relevant information in the three central tabs. 
+.. figure:: _static/dsc/main_screen.png
+    :align: center
 
-1. Fill in the basic sample information in the first tab including: 
+You should fill in all the relevant information in the three central tabs (Summary, Procedure, Notes). 
+
+
+1. Summary Tab: 
+
+Fill in the basic sample information in the first tab including: 
+
+- sample name
+- sample mass
+- slot number
     
-    - sample name
-    - sample mass
-    - slot number
+2. Procedure Tab: 
+
+.. figure:: _static/dsc/procedure.png
+    :align: center
+
+- Click **Editor**
+- Add/remove steps as required.
+- Save/load method file as required.
+
+3. Notes Tab: 
+
+.. figure:: _static/dsc/notes.png
+    :align: center
     
-2. 
+- Add your name. 
  
 
 
