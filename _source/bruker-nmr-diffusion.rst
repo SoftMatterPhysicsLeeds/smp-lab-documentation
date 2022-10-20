@@ -7,6 +7,17 @@ This document includes instructions on how to set up and run diffusion measureme
 
 Measurement setup
 -----------------
+.. container:: twocol
+    .. container:: leftside
+        .. figure:: _static/bruker-nmr/sample_spinner.png
+
+    .. container:: rightside
+        0. Insert the NMR tube inside a spinner turbine, and measure the sample height using the depth gauge (in a way shown in fig 1). Remove the tube from the sample tube with spinner turbine still attached to it. insert that into the NMR machine (near the magnet). For that press lift button and a gas/air will start coming out from the top of the magnet (sound is loud enough to hear). now, insert the NMR tube into the top of the magnet. then, click “lift” again to lower the tube.
+
+
+Open **TopSpin** software (if it isn't already).
+
+
 
 1. Pick a pre-existing diffusion measurement and drag the filename from the file explorer into the main window.
 
