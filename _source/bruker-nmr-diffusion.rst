@@ -14,7 +14,7 @@ Measurement setup
     :align: right
     :scale: 30%
 
-0. Insert the NMR tube inside a spinner turbine, and measure the sample height using the depth gauge (as shown in the figure). Remove the tubefrom the sample tube with spinner turbine still attached to it. Insert that into the NMR machine (near the magnet). For that press lift buttonand a gas/air will start coming out from the top of the magnet (sound is loud enough to hear). now, insert the NMR tube into the top of themagnet. then, click “lift” again to lower the tube.
+0. Insert the NMR tube inside the blue spinner turbine and measure the sample height using the depth gauge (as shown in the figure). Remove the tube from the depth guage with spinner turbine still attached to it. Press the lift button on the BSMS unit and a compressed air will start coming out from the bore of the magnet (the sound of it is loud enough to hear). Now, insert the NMR tube/spinner into the the bore of the magnet. Then, click “lift” again on the BSMS unit to lower the tube.
 
 Open **TopSpin** software (if it isn't already).
 
