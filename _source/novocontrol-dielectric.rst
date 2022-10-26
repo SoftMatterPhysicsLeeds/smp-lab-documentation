@@ -33,7 +33,7 @@ Sample preparation
 
 A sample should, generally, be constructed in a similar manner to the diagram below: 
 
-.. figure:: _static/dielectric/sample_diagram.png
+.. figure:: _static/dielectric/sample_diagram_new.png
     :align: center
 
 
@@ -81,7 +81,7 @@ Set sample specifications via **Measure>Sample Specification**. This is where yo
 
 Set the variables you wish to control via **Measure>List Order**. This tells the software what you wish to change (e.g. temperature) and what you are measuring as a function of (e.g. frequency). This will also determine the order in which things are done i.e. whether you measure frequency sweeps at different temperatures or vice versa. 
 
-.. figure:: _static/dielectric/list_order.png
+.. figure:: _static/dielectric/list_order_new.png
     :align: center
 
 Set your temperature and freqency values via **Measure>Value Lists>Temperature (or Frequency)**. This sets the temperatures and frequencies over which you wish to measure.  The machine is capable of a large frequency range; however, frequencies at or around 10\ :sup:`7` Hz push the limits of the equipment and may not give reliable results.  Conversely, frequencies at 10\ :sup:`-2`  Hz take a long time to measure and too many of these will increase the run length significantly.  When selecting temperatures, be careful to **select the correct unit**.  The temperature will often depend on the sample itself and what the region of interest is. 
