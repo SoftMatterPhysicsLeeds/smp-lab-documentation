@@ -1,12 +1,22 @@
 Bruker NMR: Diffusion Measurements
 ==================================
 
-Authors: Amjad Alghamdi and Dan Baker
+Authors: Amjad Alghamdi, Pallavi Kumari and Dan Baker
 
 This document includes instructions on how to set up and run diffusion measurements using the Bruker NMR, as an aid for people who have already been trained. This document **does not replace training**.
 
 Measurement setup
 -----------------
+
+
+
+.. figure:: _static/bruker-nmr/sample_spinner.png
+    :align: right
+    :scale: 30%
+
+0. Insert the NMR tube inside the blue spinner turbine and measure the sample height using the depth gauge (as shown in the figure). Remove the tube from the depth guage with spinner turbine still attached to it. Press the lift button on the BSMS unit and a compressed air will start coming out from the bore of the magnet (the sound of it is loud enough to hear). Now, insert the NMR tube/spinner into the the bore of the magnet. Then, click “lift” again on the BSMS unit to lower the tube.
+
+Open **TopSpin** software (if it isn't already).
 
 1. Pick a pre-existing diffusion measurement and drag the filename from the file explorer into the main window.
 
