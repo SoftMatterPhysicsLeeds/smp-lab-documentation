@@ -1,13 +1,9 @@
-.. SMP Labs documentation master file, created by
-   sphinx-quickstart on Tue May 31 10:54:45 2022.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 SMP Laboratory Documentation
 ============================
 
 This set of documentation contains standard operating procedures and guides for using SMP equipment, laboratories and proceses therein. 
 The documentation is *only* meant to suppliment proper training: you should always be trained by a competent user before attempting to use a piece of equipment. 
+
 
 .. toctree::
    :maxdepth: 1
@@ -21,8 +17,7 @@ The documentation is *only* meant to suppliment proper training: you should alwa
    stelar-ffc
    dscQ20
    universal-analysis
-
-
+   list-of-equipment
 
 
 .. Indices and tables
