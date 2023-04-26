@@ -48,8 +48,8 @@ Prep Lab - 3.09
 - MBraun LabMaster100 Glove Box (nitrogen-filled)
 - Rotary evaporator
 
-Rheology and Characterisation
------------------------------
+Rheology and Characterisation - 3.10
+------------------------------------
 - TA Instruments Q20 and Q2000 differential scanning calorimeters
 - Anton-Paar MCR302 rheometer
 - Rheometrics DMTA
