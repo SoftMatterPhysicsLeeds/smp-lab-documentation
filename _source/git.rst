@@ -25,16 +25,19 @@ Open a terminal (Command Prompt or PowerShell on Windows) and change directory (
 To add a single file called 'test.txt':
 
 .. code-block:: console
+
     git add test.text
 
 To add all 'changed' files within a folder (i.e. all of them for a new repo):
 
 .. code-block:: console
+
     git add .
 
 3. Commit files/changes to the repo
 
 .. code-block:: console
+
     git commit -m "description of commit"
 
 You can write a description of the commit using the '-m' flag. 
@@ -52,21 +55,25 @@ To avoid 'experimenting' on the main branch of a repo, you can make another expe
 If you make a mistake, you can revert to a previous commit. To list all the commits associated with a repo, you can look at the log: 
 
 .. code-block:: console 
+
     git log --oneline
 
 You can then copy the hash of the commit you want to roll-back to and 'reset' the repo to this commit instead:
 
 .. code-block:: console
+
     git reset --hard <commit-hash>
 
 The '--hard' flag also resets the history of the repo so that the 'unwanted' commit will no longer show up in the log. If you did this by mistake you can still get it back by finding the deleted commit hash using:
 
 .. code-block:: console
+
     git reflog
 
 and then checking out to that commit hash, creating a new branch and then merging that branch back into the 'main branch'
 
 .. code-block:: console
+
     git checkout <commit-hash>
     git switch -c <branch-name>
     git checkout main
