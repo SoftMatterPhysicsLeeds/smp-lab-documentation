@@ -13,5 +13,6 @@ This document will explain how to set up a git repository and the process for st
 Open a terminal (Command Prompt or PowerShell on Windows) and change directory ("cd") to the folder that contains the files you want to 'version control' and initlialise a new git repository: 
 
 .. code-block :: shell
+
     cd ~\example-project
     git init
