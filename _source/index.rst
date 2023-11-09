@@ -18,6 +18,7 @@ The documentation is *only* meant to suppliment proper training: you should alwa
    dscQ20
    universal-analysis
    list-of-equipment
+   git
 
 
 .. Indices and tables
