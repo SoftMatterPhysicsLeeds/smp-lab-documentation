@@ -11,6 +11,11 @@ build:
   tools:
     python: "3.11"
 
+python: 
+  install:
+    - sphinx_rtd_theme
+    - method: pip
+
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
   configuration:  _source/conf.py
