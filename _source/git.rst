@@ -44,9 +44,14 @@ You can write a description of the commit using the '-m' flag.
 
 4. Make a new branch for a feature
 
-To avoid 'experimenting' on the main branch of a repo, you can make another experimental branch for testing and then merge it back into main when everything works correctly. 
+To avoid 'experimenting' on the main branch of a repo, you should make another experimental branch for testing and then merge it back into main when everything works correctly. 
 
+.. code-block:: console
 
+    git checkout -b <new-branch>
+    # do a load of stuff 
+    git checkout main # if main branch is called 'main'
+    git merge <new-branch>
 
 
 5. Rolling back to a previous commit hash
