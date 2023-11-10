@@ -15,7 +15,7 @@ Set up git repository (repo)
 
 Open a terminal (Command Prompt or PowerShell on Windows) and change directory ("cd") to the folder that contains the files you want to 'version control' and initlialise a new git repository: 
 
-.. code-block:: console
+.. code-block:: shell
 
     cd ~/example-project
     git init
@@ -24,19 +24,19 @@ Open a terminal (Command Prompt or PowerShell on Windows) and change directory (
 
 To add a single file called 'test.txt':
 
-.. code-block:: console
+.. code-block:: shell
 
     git add test.text
 
 To add all 'changed' files within a folder (i.e. all of them for a new repo):
 
-.. code-block:: console
+.. code-block:: shell
 
     git add .
 
 3. Commit files/changes to the repo
 
-.. code-block:: console
+.. code-block:: shell
 
     git commit -m "description of commit"
 
@@ -46,7 +46,7 @@ You can write a description of the commit using the '-m' flag.
 
 To avoid 'experimenting' on the main branch of a repo, you should make another experimental branch for testing and then merge it back into main when everything works correctly. 
 
-.. code-block:: console
+.. code-block:: shell
 
     git checkout -b <new-branch>
     # do a load of stuff 
@@ -59,25 +59,25 @@ To avoid 'experimenting' on the main branch of a repo, you should make another e
 
 If you make a mistake, you can revert to a previous commit. To list all the commits associated with a repo, you can look at the log: 
 
-.. code-block:: console 
+.. code-block:: shell 
 
     git log --oneline
 
 You can then copy the hash of the commit you want to roll-back to and 'reset' the repo to this commit instead:
 
-.. code-block:: console
+.. code-block:: shell
 
     git reset --hard <commit-hash>
 
 The '--hard' flag also resets the history of the repo so that the 'unwanted' commit will no longer show up in the log. If you did this by mistake you can still get it back by finding the deleted commit hash using:
 
-.. code-block:: console
+.. code-block:: shell
 
     git reflog
 
 and then checking out to that commit hash, creating a new branch and then merging that branch back into the 'main branch'
 
-.. code-block:: console
+.. code-block:: shell
 
     git checkout <commit-hash>
     git switch -c <branch-name>
