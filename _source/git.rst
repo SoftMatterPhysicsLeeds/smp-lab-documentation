@@ -84,4 +84,55 @@ and then checking out to that commit hash, creating a new branch and then mergin
     git checkout main
     git merge <branch-name>
 
+Add repository to Github
+------------------------
+
+1. Log in to Github and then make a new repository.
+
+2. You then need to add the 'remote' to your git repository: 
+
+.. code-block:: shell
+
+    git remote add origin https://github.com/<your-github-username>/<your-repository-name>.git
+    git branch -M main
+    git push -u origin main
+
+3. You can then push changes to Github when you make them on your local repository: 
+
+.. code-block:: shell 
+
+    git add .
+    git commit -m "commit message"
+    git push
+
+
+Contributing to existing project / collaborating
+------------------------------------------------
+
+1. Clone the repository (or pull from upstream if you already have it)
+
+.. code-block:: shell
+
+    git clone https://github.com/<github-username>/<repository-name>.git
+
+    # or 
+
+    git pull # from within containing folder i.e. the one with the .git folder
+
+2. Make a new branch
+
+.. code-block:: shell
+
+    git checkout -m new_feature # change "new_feature" to whatever you like
+
+3. Add feature, push to origin as usual
+
+.. code-block:: shell
+    git add .
+    git commit -m "added new feature"
+    git push
+
+4. Create a pull request
+
+Create a pull request on Github in order to merge your branch with the 'main' branch. The rules for doing this will be different for different projects. 
 
