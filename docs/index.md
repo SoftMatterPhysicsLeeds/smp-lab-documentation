@@ -1,4 +1,12 @@
-# Welcome to MkDocs
+SMP Laboratory Documentation
+============================
+
+This set of documentation contains standard operating procedures and guides for using SMP equipment, laboratories and proceses therein. 
+The documentation is *only* meant to suppliment proper training: you should always be trained by a competent user before attempting to use a piece of equipment. 
+
+
+
+<!-- # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
@@ -14,4 +22,4 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     mkdocs.yml    # The configuration file.
     docs/
         index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        ...       # Other markdown pages, images and other files. -->

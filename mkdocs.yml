@@ -1,25 +1,30 @@
 site_name: SMP Docs
 nav: 
   - Home: index.md
+  - Anton Paar Rheometer: anton-paar.md
+  - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
+  - DSC: dscQ20.md
+  - List of Equipment: list-of-equipment.md
+  - Microscopy: microscope.md
+  - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
+  - Stelar FFC NMR: stelar-ffc.md
+  - Universal Analysis (DSC analysis): universal-analysis.md
   - About: about.md
 theme:
   name: material
   palette:
-    primary: custom
-    accent: green
-    # # Palette toggle for light mode
-    # - scheme: default
-    #   toggle:
-    #     icon: material/brightness-7 
+    
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
 
-
-    #     name: Switch to dark mode
-
-    # # Palette toggle for dark mode
-    # - scheme: slate
-    #   toggle:
-    #     icon: material/brightness-4
-    #     name: Switch to light mode 
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode 
 
 extra_css:
   - stylesheets/extra.css
