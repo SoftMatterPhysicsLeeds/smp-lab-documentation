@@ -4,12 +4,13 @@ nav:
   - Anton Paar Rheometer: anton-paar.md
   - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
   - DSC: dscQ20.md
+  - Folium Rubbing Machine: folium-rubbing.md
   - List of Equipment: list-of-equipment.md
   - Microscopy: microscope.md
   - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
   - Stelar FFC NMR: stelar-ffc.md
   - Universal Analysis (DSC analysis): universal-analysis.md
-  - About: about.md
+  # - About: about.md
 theme:
   name: material
   palette:
@@ -29,3 +30,6 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+markdown_extensions:
+  - attr_list
+  - md_in_html

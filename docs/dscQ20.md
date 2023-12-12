@@ -9,13 +9,16 @@ Turn on cooling system
 1. Open the nitrogen tap (turn valve so that it is parallel to the pipe). The pressure should already be set. 
 2. Switch on the RSC90 (cooling system box) using the green switch. 
 3. Activate the cooling system by navigating to **Control** -> **Event** and clicking **On** in the control software.  
+    <figure markdown>
+    ![cooling system turn on](static/dsc/cooling_system_turnon.png)
+    </figure markdown>
 
-.. figure:: _static/dsc/cooling_system_turnon.png
-    :align: center
+---
+**NOTE**
 
-.. note:: 
-    If the control software is not open already, open **TA Instrument Explorer** and double click on the DSC image.
+If the control software is not open already, open **TA Instrument Explorer** and double click on the DSC image.
 
+---
 
 Sample preparation
 ------------------
@@ -32,36 +35,37 @@ Sample preparation
 
 Set up measurement in the software
 ----------------------------------
-
-.. figure:: _static/dsc/main_screen.png
-    :align: center
+<figure markdown>
+![main screen](static/dsc/main_screen.png)
+</figure markdown>
 
 You should fill in all the relevant information in the three central tabs (Summary, Procedure, Notes). 
 
 
 1. Summary Tab: 
 
-Fill in the basic sample information in the first tab including: 
+    Fill in the basic sample information in the first tab including: 
 
-- sample name
-- sample mass
-- slot number
+    - sample name
+    - sample mass
+    - slot number
     
 2. Procedure Tab: 
 
-.. figure:: _static/dsc/procedure.png
-    :align: center
+    <figure markdown>
+    ![procedure](static/dsc/procedure.png)
+    </figure markdown>
 
-- Click **Editor**
-- Add/remove steps as required.
-- Save/load method file as required.
+    - Click **Editor**
+    - Add/remove steps as required.
+    - Save/load method file as required.
 
 3. Notes Tab: 
-
-.. figure:: _static/dsc/notes.png
-    :align: center
+    <figure markdown>
+    ![notes](static/dsc/notes.png)
+    </figure markdown>
     
-- Add your name. 
+    - Add your name. 
  
 
 

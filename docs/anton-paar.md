@@ -12,24 +12,42 @@ Initial Set-Up
 5. Attach the relevant base plate. Tools for doing so are located next to the machine.
 6. Open the 'Control Panel' (right hand side of the screen) and click on 'Initialise'.
 
-.. image:: _static/anton-paar/control-panel.png
+
+    <figure markdown>
+    ![Control panel photo](static/anton-paar/control-panel.png)
+    </figure>
 
 7. Attach measuring tool to rheometer, set temperature and zero the gap using the same panel used for initialisation.
+    <figure markdown>
 
-.. image:: _static/anton-paar/zero-gap.png
-   
+    ![Zero gap screen](static/anton-paar/zero-gap.png)   
+    </figure>
 
 Calibration
 -----------
 
-.. note:: 
-    The calibration procedure should be performed at the beginning of your set of measurements using the sample geometry you intend to measure with. 
+
+---
+**NOTE**
+
+The calibration procedure should be performed at the beginning of your set of measurements using the sample geometry you intend to measure with. 
+
+---
 
 1. Go to 'My Apps' and click on 'Verification and Adjustment' at the bottom of the page.
 
-.. image:: _static/anton-paar/my-apps.png
+
+    <figure markdown>
+
+    ![Zero gap screen](static/anton-paar/my-apps.png)   
+    </figure>
 
 2. Click on 'Adjust Drive'
 
-.. image:: _static/anton-paar/verification.png
+    <figure markdown>
+
+    ![Zero gap screen](static/anton-paar/verification.png)   
+    </figure>
+    
+
    
