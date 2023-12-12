@@ -1,9 +1,5 @@
 Setting up git and Github
 =========================
-
-.. note::
-    WORK IN PROGRESS 
-
 Author: Dan Baker
 
 This document will explain how to set up a git repository and the process for storing this repository on Github. It is not meant to be completely exhaustive (I'm definitely not an expert) and so you should suppliment whatever I write here with other documentation (I will not go into much detail about how git actually works.)
@@ -13,76 +9,64 @@ Set up git repository (repo)
 
 1. Initlialise repo
 
-Open a terminal (Command Prompt or PowerShell on Windows) and change directory ("cd") to the folder that contains the files you want to 'version control' and initlialise a new git repository: 
+    Open a terminal (Command Prompt or PowerShell on Windows) and change directory ("cd") to the folder that contains the files you want to 'version control' and initlialise a new git repository:   
 
-.. code-block:: shell
-
-    cd ~/example-project
-    git init
+        
+        cd ~/example-project  
+        git init
+        
 
 2. Add files to the repo
 
-To add a single file called 'test.txt':
+    To add a single file called 'test.txt':
 
-.. code-block:: shell
+        git add test.text
 
-    git add test.text
+    To add all 'changed' files within a folder (i.e. all of them for a new repo):
 
-To add all 'changed' files within a folder (i.e. all of them for a new repo):
-
-.. code-block:: shell
-
-    git add .
+        git add .
 
 3. Commit files/changes to the repo
 
-.. code-block:: shell
+        git commit -m "description of commit"
 
-    git commit -m "description of commit"
+    You can write a description of the commit using the '-m' flag. 
 
-You can write a description of the commit using the '-m' flag. 
 
 4. Make a new branch for a feature
 
-To avoid 'experimenting' on the main branch of a repo, you should make another experimental branch for testing and then merge it back into main when everything works correctly. 
+    To avoid 'experimenting' on the main branch of a repo, you should make another experimental branch for testing and then merge it back into main when everything works correctly. 
 
-.. code-block:: shell
-
-    git checkout -b <new-branch>
-    # do a load of stuff 
-    git checkout main # if main branch is called 'main'
-    git merge <new-branch>
+        git checkout -b <new-branch>
+        # do a load of stuff 
+        git checkout main # if main branch is called 'main'
+        git merge <new-branch>
 
 
 5. Rolling back to a previous commit hash
 
 
-If you make a mistake, you can revert to a previous commit. To list all the commits associated with a repo, you can look at the log: 
+    If you make a mistake, you can revert to a previous commit. To list all the commits associated with a repo, you can look at the log: 
 
-.. code-block:: shell 
 
-    git log --oneline
+        git log --oneline
 
-You can then copy the hash of the commit you want to roll-back to and 'reset' the repo to this commit instead:
+    You can then copy the hash of the commit you want to roll-back to and 'reset' the repo to this commit instead:
 
-.. code-block:: shell
+        git reset --hard <commit-hash>
 
-    git reset --hard <commit-hash>
+    The '--hard' flag also resets the history of the repo so that the 'unwanted' commit will no longer show up in the log. If you did this by mistake you can still get it back by finding the deleted commit hash using:
 
-The '--hard' flag also resets the history of the repo so that the 'unwanted' commit will no longer show up in the log. If you did this by mistake you can still get it back by finding the deleted commit hash using:
 
-.. code-block:: shell
+        git reflog
 
-    git reflog
+    and then checking out to that commit hash, creating a new branch and then merging that branch back into the 'main branch'
 
-and then checking out to that commit hash, creating a new branch and then merging that branch back into the 'main branch'
 
-.. code-block:: shell
-
-    git checkout <commit-hash>
-    git switch -c <branch-name>
-    git checkout main
-    git merge <branch-name>
+        git checkout <commit-hash>
+        git switch -c <branch-name>
+        git checkout main
+        git merge <branch-name>
 
 Add repository to Github
 ------------------------
@@ -91,19 +75,16 @@ Add repository to Github
 
 2. You then need to add the 'remote' to your git repository: 
 
-.. code-block:: shell
-
-    git remote add origin https://github.com/<your-github-username>/<your-repository-name>.git
-    git branch -M main
-    git push -u origin main
+        git remote add origin https://github.com/<your-github-username>/<your-repository-name>.git
+        git branch -M main
+        git push -u origin main
 
 3. You can then push changes to Github when you make them on your local repository: 
 
-.. code-block:: shell 
 
-    git add .
-    git commit -m "commit message"
-    git push
+        git add .
+        git commit -m "commit message"
+        git push
 
 
 Contributing to existing project / collaborating
@@ -111,28 +92,25 @@ Contributing to existing project / collaborating
 
 1. Clone the repository (or pull from upstream if you already have it)
 
-.. code-block:: shell
 
-    git clone https://github.com/<github-username>/<repository-name>.git
+        git clone https://github.com/<github-username>/<repository-name>.git
 
-    # or 
+        # or 
 
-    git pull # from within containing folder i.e. the one with the .git folder
+        git pull # from within containing folder i.e. the one with the .git folder
 
 2. Make a new branch
 
-.. code-block:: shell
 
-    git checkout -m new_feature # change "new_feature" to whatever you like
+        git checkout -m new_feature # change "new_feature" to whatever you like
 
 3. Add feature, push to origin as usual
 
-.. code-block:: shell
-    git add .
-    git commit -m "added new feature"
-    git push
+        git add .
+        git commit -m "added new feature"
+        git push
 
 4. Create a pull request
 
-Create a pull request on Github in order to merge your branch with the 'main' branch. The rules for doing this will be different for different projects. 
+    Create a pull request on Github in order to merge your branch with the 'main' branch. The rules for doing this will be different for different projects. 
 
