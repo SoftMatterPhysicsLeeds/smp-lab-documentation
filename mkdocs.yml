@@ -5,6 +5,7 @@ nav:
   - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
   - DSC: dscQ20.md
   - Folium Rubbing Machine: folium-rubbing.md
+  - Git / Github: git.md
   - List of Equipment: list-of-equipment.md
   - Microscopy: microscope.md
   - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
@@ -14,18 +15,21 @@ nav:
 theme:
   name: material
   palette:
-    
     # Palette toggle for light mode
     - scheme: default
+      primary: custom
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
+      primary: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode 
+    
+    
 
 extra_css:
   - stylesheets/extra.css
