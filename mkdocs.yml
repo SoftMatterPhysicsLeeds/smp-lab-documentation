@@ -1,3 +1,4 @@
+# deploy:  mkdocs gh-deploy --config-file ..\smp-lab-documentation\mkdocs.yml --remote-branch main
 site_name: SMP Documentation
 nav: 
   - Home: index.md
@@ -6,7 +7,6 @@ nav:
   - DSC: dscQ20.md
   - Folium Rubbing Machine: folium-rubbing.md
   - Git / Github: git.md
-  - List of Equipment: list-of-equipment.md
   - Microscopy: microscope.md
   - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
   - Stelar FFC NMR: stelar-ffc.md
