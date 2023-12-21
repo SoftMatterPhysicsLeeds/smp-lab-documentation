@@ -81,7 +81,7 @@ Set the variables you wish to control via **Measure>List Order**. This tells the
 ![Change list order dialogue](static/dielectric/list_order_new.png)
 </figure markdown>
 
-Set your temperature and freqency values via **Measure>Value Lists>Temperature (or Frequency)**. This sets the temperatures and frequencies over which you wish to measure.  The machine is capable of a large frequency range; however, frequencies at or around 10\ :sup:`7` Hz push the limits of the equipment and may not give reliable results.  Conversely, frequencies at 10\ :sup:`-2`  Hz take a long time to measure and too many of these will increase the run length significantly.  When selecting temperatures, be careful to **select the correct unit**.  The temperature will often depend on the sample itself and what the region of interest is. 
+Set your temperature and freqency values via **Measure>Value Lists>Temperature (or Frequency)**. This sets the temperatures and frequencies over which you wish to measure.  The machine is capable of a large frequency range; however, frequencies at or around 10<sup>7</sup> Hz push the limits of the equipment and may not give reliable results.  Conversely, frequencies at 10<sup>-2</sup>  Hz take a long time to measure and too many of these will increase the run length significantly.  When selecting temperatures, be careful to **select the correct unit**.  The temperature will often depend on the sample itself and what the region of interest is. 
 
 <figure markdown>
 ![Variable lists](static/dielectric/variable_lists.png)
