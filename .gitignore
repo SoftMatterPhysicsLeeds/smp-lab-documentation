@@ -1,6 +1,7 @@
 # sphinx build folder
 _build
 site/
+
 # Compiled source #
 ###################
 *.com

@@ -1,0 +1,50 @@
+# deploy:  mkdocs gh-deploy --config-file ..\smp-lab-documentation\mkdocs.yml --remote-branch main
+site_name: SMP Documentation
+nav: 
+  - Home: index.md
+  - Anton Paar Rheometer: anton-paar.md
+  - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
+  - DSC: dscQ20.md
+  - Folium Rubbing Machine: folium-rubbing.md
+  - Git / Github: git.md
+  - Microscopy: microscope.md
+  - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
+  - Stelar FFC NMR: stelar-ffc.md
+  - Universal Analysis (DSC analysis): universal-analysis.md
+  # - About: about.md
+theme:
+  name: material
+  icon:
+    logo: material/microscope
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode 
+    
+    
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+
+
+extra_javascript:
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
