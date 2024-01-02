@@ -156,3 +156,205 @@ A popup will ask whether you want to 'see the report'. Click 'Yes' and something
 
 The $\alpha$ relaxation timescales fitted with the VFT equation are usually plotted in an 'Arrhenius manner' i.e. against $1000/T$. Luckily, the 'fit line' data is available by clicking the tab at the bottom of the 'Book' window and will be called something like 'FitNLCurve1'. You can then replot this data with your $\tau_\alpha$ data against $1000/T$ instead.
 
+## Matlab
+
+Here I will describe a simple fit in **Matlab** using `lsqcurvefit` from the Curve Fitting Toolbox. One alternative to this would be to use `fminsearch` to minimise $\sum{\chi^{2}}$.
+
+### Data Manipulation
+
+Firstly, let's put the $T$ and $\tau_\alpha$ data into vectors:
+
+``` Matlab
+
+    T = [232;230;228;226;224;222;220;218;216;214;212;210;208;206;204;202;200];
+    tau_alpha = [3.08000000000000e-06;5.23000000000000e-06;9.34000000000000e-06;...
+    1.76000000000000e-05;3.38000000000000e-05;6.70000000000000e-05;0.000141862000000000;...
+    0.000313956000000000;0.000740746000000000;0.00186504500000000;...
+    0.00518699100000000;0.0156017730000000;0.0495420140000000;0.175158932000000;...
+    0.658969937000000;2.58630208200000;10.7767433300000];
+```
+
+### Define a fit function
+
+There are a couple of different ways to define a function in **Matlab**: either in-line in the script you are using or as a separate file.
+
+#### In-Line
+
+To define a function 'in-line' in **Matlab** one can use an anonymous functions: 
+
+``` matlab 
+
+    vft_function = @(p,T) p(1)+((log10(exp(1)).*p(2).*p(3))./(T-p(3)));
+```
+
+Here, the input parameter 'p' is a vector containing the fit parameters (p(1) = $\mathrm{log}_{10}(\tau_{0})$, p(2) = $D$ and p(3) = $T_0$). Note the '.' before the multiplication and division symbols; these are used because `T` is a vector and not just a single value.
+
+#### Separate File
+
+One can also define `vft_function` in a separate file. This function will return a set of $\tau_\alpha$ values for a given set of $T$ values and the fit parameters. The convention in **Matlab** is to name the function file after the function name i.e. `vft_function.m`.
+
+
+``` matlab
+
+    function tau_alpha = vft_function(T,p)
+        tau_alpha = p(1)+((log10(exp(1)).*p(2).*p(3))./(T-p(3)));
+    end
+```
+
+### Fit the Data
+
+You can call the `lsqcurvefit` fitting routine (from the Curve Fitting Toolbox) in the following manner: 
+
+``` matlab 
+
+    pguess = [-12,10,150];
+    fit_params = lsqcurvefit(vft_function,pguess,T,log10(tau));
+```
+The parameters given to `lsqcurvefit` are as follows: 1) the function (you will need an `@` symbol before the function name if you're calling it from an external .m file), 2) the initial guesses of the fit parameters (as a vector, in our case `pguess`), 3) x data to fit to (in this case $T$), 4) y data to fit to (in this case $\mathrm{log}_{10}(\tau_\alpha)$), 
+
+The output, `fit_params`, will be a vector containing the optimised parameters. We can now generate a `tau_alpha_fitted` vector based on these optimised parameters and plot both the experimental data and the fit to check that it has worked: 
+
+``` matlab
+
+    tau_alpha_fitted = vft_function(fit_params,T);
+    
+    figure(1)
+    hold off
+    plot(T,log10(tau_alpha),'ro')
+    hold on
+    plot(T,tau_alpha_fitted,'k-')
+
+```
+
+<figure markdown>
+![vft fit in matlab](static/least-squares/Matlab%20Images/VFT_fit_Matlab.svg)
+</figure markdown>
+
+## Python
+
+Here I will describe fitting data using the 'Curve Fit' module in the Scipy.Optimize package. Another useful alternative is the ['LMFit'](https://lmfit.github.io/lmfit-py/) package.
+
+### Import modules
+
+First we need to import all the modules we will need. We will be using: 1) `scipy.optimize.curve_fit` to do the fitting, 2) `matplotlib.pyplot` to plot our results, and 3) `numpy` do to some maths.
+
+``` python
+
+    from scipy.optimize import curve_fit
+    import matplotlib.pyplot as plt
+    import numpy as np
+```
+### Data Manipulation
+
+Put our data into a couple of numpy arrays:
+
+``` python 
+
+    T = np.array([232,230,228,226,224,222,220,218,216,214,212,210,208,206,204,202,200])
+    
+    tau_alpha =np.array([3.08000000000000e-06,5.23000000000000e-06,9.34000000000000e-06,
+    1.76000000000000e-05,3.38000000000000e-05,6.70000000000000e-05,
+    0.000141862000000000,0.000313956000000000,0.000740746000000000,
+    0.00186504500000000,0.00518699100000000,0.0156017730000000,
+    0.0495420140000000,0.175158932000000,0.658969937000000,
+    2.58630208200000,10.7767433300000])
+```
+### Define fit function
+
+Define the VFT function: 
+
+``` python
+
+    def VFT_function(T,log10_tau_0,D,T_0):
+        return log10_tau_0+((np.log10(np.exp(1))*D*T_0))/(T-T_0)
+```
+
+### Fit the data
+
+``` python
+
+    pguess = [-12,10,150]
+    fit_params,covariance_matrix = curve_fit(VFT_function,T,np.log10(tau_alpha),pguess)
+```
+
+The parameters given to curve\_fit are as follows: 1) the function, 2) x data ($T$), 3) y data ($\mathrm{log}_{10}(\tau_\alpha)$), 4) initial guesses for parameters. curve\_fit returns 1) 'fit\_params' which contains the optimised parameters and 'covariance\_matrix' which contains the (ahem...) covariance matrix.
+
+We can now generate a fitted set of $\tau_\alpha$ data based on the optimised parameters and plot both the experimental data and the fit to check that the fitting has worked.
+
+``` python 
+    tau_alpha_fitted = VFT_function(T,*fit_params)
+
+    fig,ax = plt.subplots()
+    ax.plot(T,np.log10(tau_alpha),'ro')
+    ax.plot(T,tau_alpha_fitted,'k-')
+
+    plt.show()
+```
+
+<figure markdown>
+![fit in python](static/least-squares/Python%20Images/fit_python.png)
+</figure markdown>
+
+## Julia
+
+### Load modules
+
+``` julia
+    using LsqFit,PyPlot
+
+```
+
+### Data Manipulation
+
+Now we can add our experimental data into a couple of vectors:
+
+``` julia 
+    T = [232,230,228,226,224,222,220,218,216,214,212,210,208,206,204,202,200];
+    tau_alpha =[3.08000000000000e-06,5.23000000000000e-06,9.34000000000000e-06,
+    1.76000000000000e-05,3.38000000000000e-05,6.70000000000000e-05,
+    0.000141862000000000,0.000313956000000000,0.000740746000000000,
+    0.00186504500000000,0.00518699100000000,0.0156017730000000,
+    0.0495420140000000,0.175158932000000,0.658969937000000,
+    2.58630208200000,10.7767433300000];
+
+```
+
+### {Define fit function}
+
+Julia allows for extremely simple function declarations in-line: 
+
+``` julia
+    
+    vft(T,p) = p[1].+ (log10(exp(1)).*p[2].*p[3]./(T.-p[3]))
+
+```
+
+Note the '.' in front of all operators in the function so that we can input a vector for $T$. 
+
+\subsection{Fit the data}
+
+We will use the `curve_fit` function in the `LsqFit` module.
+
+``` julia
+
+    pguess = [-12., 10., 150.]
+    fit = curve_fit(vft,T,log10.(tau_alpha),pguess)
+
+```
+
+The parameters given to the 'curve\_fit' are 1) the function, 2) x data ($T$), 3) y data ($\mathrm{log}_{10}(\tau_\alpha))$) and 4) the initial guesses for the fit parameters. The function returns a structure which we've sent to the variable 'fit'; the fit parameters can be access from 'fit.param'. Note that the 'pguess' parameters must have a decimal place after to ensure that Julia treats them as floats. 
+
+Finally, we can generate some fitted $\tau_\alpha$ data and plot the result. 
+
+``` julia
+    fitted_tau_alpha = vft(T,fit.param)
+
+    fig, ax = subplots()
+    ax.plot(T,log10.(tau_alpha),"ro")
+    ax.plot(T,fitted_tau_alpha,"k-")
+
+    display(gcf())
+```
+<figure markdown>
+![fit in julia](static/least-squares/Julia%20Images/julia_fit.png)
+</figure markdown>
