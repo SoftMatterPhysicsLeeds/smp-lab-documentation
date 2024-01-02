@@ -1,5 +1,11 @@
 # deploy:  mkdocs gh-deploy --config-file ..\smp-lab-documentation\mkdocs.yml --remote-branch main
 site_name: SMP Documentation
+site_description: Documentation for the equipment/processes used in the Soft Matter Physics Group at the University of Leeds.
+site_author: Dan Baker
+site_url: https://softmatterphysicsleeds.github.io
+copyright: "Copyright &copy; Dan Baker 2023-present"
+
+
 nav: 
   - Home: index.md
   - Anton Paar Rheometer: anton-paar.md
