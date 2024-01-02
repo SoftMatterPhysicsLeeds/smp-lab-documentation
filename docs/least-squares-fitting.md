@@ -319,7 +319,7 @@ Now we can add our experimental data into a couple of vectors:
 
 ```
 
-### {Define fit function}
+### Define fit function
 
 Julia allows for extremely simple function declarations in-line: 
 
