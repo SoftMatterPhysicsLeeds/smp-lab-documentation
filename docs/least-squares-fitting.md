@@ -141,3 +141,18 @@ On the next screen you can set upper and lower bounds for the parameters. This i
 </figure markdown>
 
 ### Fit the data
+
+The NLfit() window will complain that you haven't selected any data, which, to be fair, we haven't. In order to select the data, click 'Data Selection' on the left hand side, press the 'plus' button next to 'Input Data' and click the arrow on the right hand side on the 'Range 1' line. Select the logged $\tau_{\alpha}$ data. If all goes well in this step there should be a graph on the bottom left with the data and a red fit line, which is just the VFT equation using the initial parameters. After this, click 'Fit' (optional: cross fingers).
+
+<figure markdown>
+![select data](static/least-squares/Origin%20Images/select_data-1.png)
+</figure markdown>
+
+A popup will ask whether you want to 'see the report'. Click 'Yes' and something that looks like this, with the optimised parameters, their errors and a nice graph with a line through the points (hopefully): 
+
+<figure markdown>
+![origin fit report](static/least-squares/Origin%20Images/report-1.png)
+</figure markdown>
+
+The $\alpha$ relaxation timescales fitted with the VFT equation are usually plotted in an 'Arrhenius manner' i.e. against $1000/T$. Luckily, the 'fit line' data is available by clicking the tab at the bottom of the 'Book' window and will be called something like 'FitNLCurve1'. You can then replot this data with your $\tau_\alpha$ data against $1000/T$ instead.
+
