@@ -7,6 +7,7 @@ nav:
   - DSC: dscQ20.md
   - Folium Rubbing Machine: folium-rubbing.md
   - Git / Github: git.md
+  - Least Squares Fitting: least-squares-fitting.md
   - Microscopy: microscope.md
   - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
   - Stelar FFC NMR: stelar-ffc.md
@@ -45,6 +46,6 @@ markdown_extensions:
 
 
 extra_javascript:
-  - javascripts/katex.js 
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
-  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
