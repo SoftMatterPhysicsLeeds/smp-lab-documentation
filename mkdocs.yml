@@ -23,6 +23,8 @@ theme:
   name: material
   features:
     - content.code.copy
+    - toc.follow
+    - navigation.top
   icon:
     logo: material/microscope
   palette:
@@ -39,6 +41,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode 
+    
     
 extra_css:
   - stylesheets/extra.css
