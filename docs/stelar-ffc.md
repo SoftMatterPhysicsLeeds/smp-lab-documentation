@@ -58,12 +58,9 @@ You should perform these steps every time you change sample/temperature.
 3. Change the run parameters (frequency range, number of points, number of repetitions per point etc) on the right hand side of the wizard.
 4. Set filename via Export File => Change. 
 
----
-**Note**
+!!! info
+    The total run-time for an experiment will be (approximately) = Profile Points x Repetition Points x Tau Blocks x Delay Time. 
 
-The total run-time for an experiment will be (approximately) = Profile Points x Repetition Points x Tau Blocks x Delay Time. 
-
---- 
 
 5. Click execute in the wizard to start the run. 
 6. The software will execute the first experiment (at the first frequency) and tell you whether it recommends you continue or not. If you have gone through the setup steps correctly this should work... 

@@ -41,12 +41,11 @@ a.	Once the ‘RUB’ button is pressed, the ‘carriage’ or stage speed selec
 b.	To change the speed, press the bottom-left field, indicated by the black arrow. The value in the field will begin blinking and the numerical keyboard will appear, which means it can now be changed.<br>
 c.	Select a value from the numerical keyboard between 2 and 8cm/s. Confirm the selection by pressing the ‘return’ button, highlighted in red below. <br>
 
----
-**NOTE**
 
-Slow stage speeds (2-4cm/s) appear to cause excess vibrations in the stage during translation. Higher stage speeds allow the drive motor to run smoother, reducing vibrations.
+!!! info
 
----
+    Slow stage speeds (2-4cm/s) appear to cause excess vibrations in the stage during translation. Higher stage speeds allow the drive motor to run smoother, reducing vibrations.
+
 d.	The value in the field will now stop blinking and the numerical keyboard will disappear. Press the value again if you want to change the stage speed or press the ‘Next’ button to continue.<br>
 <figure markdown>
 ![experimental setup](static/folium/experimental_setup.png)
@@ -56,12 +55,11 @@ e.	The following screen will now be displayed. In the bottom right corner of the
 f.	As shown, an acetate sheet with a rectangular section removed is placed on the stage, this covers the vac holes outside the area of your sample. This should be tailored to fit the shape of your substrate/substrates. <br>
 g.	Place your sample on the vacuum stage, covering the remaining vac holes that are not covered by the acetate sheet.<br>
 
----
-**NOTE**
+!!! warning
 
-Ensure your sample is flat on the surface of the stage and NOT resting on the acetate sheet, as this will angle your substrate and result in uneven rubbing strength.
+    Ensure your sample is flat on the surface of the stage and NOT resting on the acetate sheet, as this will angle your substrate and result in uneven rubbing strength.
 
----
+
 h.	The vacuum check box will now be **checked** and you can now press ‘Start Drum’ to start the roller.<br>
 
 <figure markdown>
@@ -70,33 +68,30 @@ h.	The vacuum check box will now be **checked** and you can now press ‘Start D
 
 i.	Adjust the sample stage height to vary the rubbing strength. ’14.20’ on the micrometer scale provided uniform planar alignment for a PVA alignment layer on microscope glass (1.05mm thick). Higher values -> larger roller-substrate separation -> lighter rubbing e.g. ’13.00’ will provide harder rubbing than ’14.00’.<br>
 
----
-**NOTE**
+!!! info
 
-This suggested height may not be perfect in all cases, but provides a good starting point. Adjust accordingly for different substrate thicknesses e.g. melinex/ITO glass etc.
+    This suggested height may not be perfect in all cases, but provides a good starting point. Adjust accordingly for different substrate thicknesses e.g. melinex/ITO glass etc.
 
----
 
 j.	Use the knob on the control box to adjust the roller speed. Anywhere between 500 – 1000rpm should be sufficient for typical cases, but if higher rubbing strengths are required, the roller speed can be safely increased to 2000rpm.<br>
 k.	Check your substrate is positioned as you would like, then press ‘RUB’ on the roller speed screen to commence rubbing. The stage will translate beneath the roller and the ‘Rubbing Complete’ screen will be displayed once it has finished.<br>
 l.	Open the access door, turn off the vacuum using the red vacuum chuck valve and carefully remove your sample. <br>
 
----
-**NOTE** 
 
-Don’t forget to make a note of the rubbing direction you have just applied, this can be done by carefully drawing a line/arrow on the underside of your substrate (can be done prior to rubbing).
+!!! info 
 
----
+    Don’t forget to make a note of the rubbing direction you have just applied, this can be done by carefully drawing a line/arrow on the underside of your substrate (can be done prior to rubbing).
+
+
 <figure markdown>
 ![stage height](static/folium/stage_height.png)
 </figure markdown>
 
----
-**NOTE**
 
-If you want to carry out more rubbing, return to step 2d and repeat the process as many times as required.
+!!! info 
 
----
+    If you want to carry out more rubbing, return to step 2d and repeat the process as many times as required.
+
 
 4. System Shutdown
 ------------------

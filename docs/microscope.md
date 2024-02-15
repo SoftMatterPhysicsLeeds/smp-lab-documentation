@@ -16,15 +16,14 @@ This document includes instructions on how to setup a microscope, as an aid for 
     ![Aperture Brightness](static/microscope/aperture_brightness.png)
     <figcaption markdown> **Figure 2**: Controlling the bottom aperture and brightness in transmission mode on Bay 5. </figcaption markdown>
     </figure markdown>
+    
 
-    ---
 
-    **NOTE**
+    !!! info
 
-    It is best practice to focus onto your sample by moving the stage downwards, so that you don’t risk damaging your sample or the lens through collisions etc.
-    Try to focus onto the sample, but take into account that focusing may be difficult to achieve when using a hot stage on some microscopes. This is because there could be limitations on the adjustment of the stage height so you may not be able to reach the focal point.
+        It is best practice to focus onto your sample by moving the stage downwards, so that you don’t risk damaging your sample or the lens through collisions etc.
+        Try to focus onto the sample, but take into account that focusing may be difficult to achieve when using a hot stage on some microscopes. This is because there could be limitations on the adjustment of the stage height so you may not be able to reach the focal point.
 
-    --- 
 
 4. **Close the bottom aperture** of the microscope (i.e. close the aperture that controls light into system in transmission mode). 
 
@@ -33,15 +32,13 @@ This document includes instructions on how to setup a microscope, as an aid for 
     <figcaption> **Figure 3**: Focusing dials on the side of the Bay 5 microscope. </figcaption>
     </figure markdown>
 
----
 
-**NOTE**
+!!! info
 
-On side of microscope there are two black dials, one will control brightness of light, and the other will open and control the aperture, see Figure 2. When closing the bottom aperture, the shuttering should be visible through the eyepieces.
+    On side of microscope there are two black dials, one will control brightness of light, and the other will open and control the aperture, see Figure 2. When closing the bottom aperture, the shuttering should be visible through the eyepieces.
     However, on a microscope with an externally powered light source, you cannot control brightness using the black dial on the side of the microscope. 
     Also consider whether an external DC power source is more suitable for your experiments, such as optical measurements.
 
----
 
 5. Once the bottom aperture has been closed to the minimum, the **condenser needs to be focused**, using the black dial next to the condenser (see Figure 3). Looking through the eyepiece, focus the condenser so that the polygon shape is focused, as seen in Figure 4A below.
 
@@ -51,13 +48,10 @@ On side of microscope there are two black dials, one will control brightness of 
     <figcaption> **Figure 4**: Focusing (A) and centering (B) the condenser on Bay 5. </figcaption>
     </figure markdown>
 
----
 
-**NOTE**
+!!! info
+    Not all microscopes have inbuilt screws, but some have the correct hex keys in slots on the top of the microscope. Otherwise, you may need to find the correct hex key.
 
-Not all microscopes have inbuilt screws, but some have the correct hex keys in slots on the top of the microscope. Otherwise, you may need to find the correct hex key.
-
----
 
 7. **Open** the **bottom aperture** to just outside the field of view through the eyepieces (or camera).
 8. **Remove the left eyepiece** on the microscope, to adjust the condenser aperture. Move between the minimum and maximum on the **condenser aperture adjustment dial**, as seen in Figure 1, in order to get an idea of the intensity. From the maximum intensity, close this aperture so that the light you see is at approximately 80% brightness. 
@@ -67,24 +61,20 @@ Not all microscopes have inbuilt screws, but some have the correct hex keys in s
     <figcaption> **Figure 5**: Appearance of condenser aperture adjustment dials on (A) Bay 5 and (B) Bay 3.</figcaption>
     </figure markdown>
 
----
 
-**NOTE**
+!!! info 
 
-For some microscopes, the condenser aperture adjustment dial can appear differently, shown below in Figure 5. For the dial shown in Figure 5B, the dial gives an indication of the position of the dial depending on the objective lens. Nonetheless, should still use the above method to determine the best position for the dial.
+    For some microscopes, the condenser aperture adjustment dial can appear differently, shown below in Figure 5. For the dial shown in Figure 5B, the dial gives an indication of the position of the dial depending on the objective lens. Nonetheless, should still use the above method to determine the best position for the dial.
 
----
 
 9. Put the **eyepiece back on the microscope**.
 10.	Now check that your sample is **centred** when **rotating** the stage. If the sample is not centred, you need to use the stage centring keys.
 
----
 
-**NOTE**
+!!! info 
 
-On some microscopes, the stage centring keys are not fixed to the microscope but can be found on the top back right of the microscope in small slots. Please make sure to put these back afterwards.
+    On some microscopes, the stage centring keys are not fixed to the microscope but can be found on the top back right of the microscope in small slots. Please make sure to put these back afterwards.
 
----
 11.	Every time you **change microscope objective**, you need to **repeat** all the above steps to ensure that your microscope is properly **focused**.
 
 

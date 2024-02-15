@@ -13,12 +13,10 @@ Turn on cooling system
     ![cooling system turn on](static/dsc/cooling_system_turnon.png)
     </figure markdown>
 
----
-**NOTE**
 
-If the control software is not open already, open **TA Instrument Explorer** and double click on the DSC image.
+!!! info
+    If the control software is not open already, open **TA Instrument Explorer** and double click on the DSC image.
 
----
 
 Sample preparation
 ------------------

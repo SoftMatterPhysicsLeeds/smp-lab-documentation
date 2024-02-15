@@ -27,12 +27,11 @@ Calibration
 -----------
 
 
----
-**NOTE**
 
-The calibration procedure should be performed at the beginning of your set of measurements using the sample geometry you intend to measure with. 
+!!! info
 
----
+    The calibration procedure should be performed at the beginning of your set of measurements using the sample geometry you intend to measure with. 
+
 
 1. Go to 'My Apps' and click on 'Verification and Adjustment' at the bottom of the page.
 

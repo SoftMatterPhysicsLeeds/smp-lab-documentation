@@ -91,13 +91,11 @@ When the measurement is set up completely, it is best to do a test run via **Mea
 
 If you wish to perform test measurements (single sweeps) at specific temperatures, the temperature can be controlled manually via **Temp. Controller>Activation**.  A temperature can be set that you wish your sample to reach (**Setpoint**) and the heaters can be activated.
 
----
 
-**Note**
+!!! warning
 
-The sample holder **must** be in the cryostat for the heaters to be able to change the temperature.
+    The sample holder **must** be in the cryostat for the heaters to be able to change the temperature.
 
---- 
 
 <figure markdown>
 ![temperature control activation](static/dielectric/temp_control_activation.png)
@@ -123,7 +121,10 @@ The bridge consists of a frequency analyser, a sample cell and a temperature con
 ![sample cell](static/dielectric/sample_cell.png)
 </figure markdown>
 
-When securing the sample cell, the sample should be flat and flush against both electrodes and the screw should only need to be finger tight (i.e. not overtightened or tightened with tools).  Tightening and loosening the screw can loosen the electrode connection in contact with the upper electrode (F); when this is too loose or disconnected artefacts will appear in your measurements.  Check that this is secure before running measurements.  If this is not secure, it can be tightened similarly to the mounting screw (B) but should not rotate such that the isolation housing screw (D) rotates with it.  **THE ISOLATION HOUSING SCREW SHOULD NOT BE ROTATED OR MOVED EXCESSIVELY**.  
+When securing the sample cell, the sample should be flat and flush against both electrodes and the screw should only need to be finger tight (i.e. not overtightened or tightened with tools).  Tightening and loosening the screw can loosen the electrode connection in contact with the upper electrode (F); when this is too loose or disconnected artefacts will appear in your measurements.  Check that this is secure before running measurements.  If this is not secure, it can be tightened similarly to the mounting screw (B) but should not rotate such that the isolation housing screw (D) rotates with it.  
+
+!!! danger
+    **THE ISOLATION HOUSING SCREW SHOULD NOT BE ROTATED OR MOVED EXCESSIVELY**.  
 
 <!-- .. Setting up a measurement in software
 .. ------------------------------------
