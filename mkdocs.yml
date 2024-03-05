@@ -8,6 +8,7 @@ copyright: "Copyright &copy; Dan Baker 2023-present"
 
 nav: 
   - Home: index.md
+  - 3D PCS: dls.md
   - Anton Paar Rheometer: anton-paar.md
   - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
   - DSC: dscQ20.md
