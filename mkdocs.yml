@@ -21,6 +21,8 @@ nav:
   - Raman: raman.md
   - Stelar FFC NMR: stelar-ffc.md
   - Universal Analysis (DSC analysis): universal-analysis.md
+  - Vacuum Ovens: vacuum-ovens.md
+
   # - About: about.md
 theme:
   name: material
