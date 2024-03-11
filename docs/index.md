@@ -15,13 +15,13 @@ This website contains standard operating procedures for SMP equipment. Articles 
 - Benchtop spin-coater
 
 ### LC Back-end (Clean Room) - 1.18C
-- Rubbing machines (for rubbing the alignment layer on liquid crystal devices)
+- [Rubbing machines (for rubbing the alignment layer on liquid crystal devices)](folium-rubbing.md) 
 - Laurell WS-650Mz-8NPPB spin coater
 - UV-Ozone cleaner (substrate preparation)
 - PlasmaEtch PE-25 plasma etcher (oxygen fed)
 
 ### Microscopy - 1.19
-- Various polarising optical microscopes (Olympus BH2, Leica DM2700) with cameras (Nikon, DeltaPix) for capturing images
+- [Various polarising optical microscopes (Olympus BH2, Leica DM2700) with cameras (Nikon, DeltaPix) for capturing images](microscope.md)
 - Edinburgh Instruments FLS1000 fluorimeter
 - Various oscilloscopes, amplifiers, function generators, dielectric spectrometers for doing electro-optics  
 
@@ -30,25 +30,25 @@ This website contains standard operating procedures for SMP equipment. Articles 
 - Resin printer
 
 ### Small darkroom - 1.24
-- Renishaw InVia Raman Spectrometer (wavelength = 532nm)
+- [Renishaw InVia Raman Spectrometer (wavelength = 532nm)](raman.md)
 - Abbé refractometer
 
 ### Level 3+ Optics Teaching (Large darkroom) - 1.25
 - various benchtop optical set-ups, for both teaching and research
 
 ### Laser Darkroom - 3.08
-- LS Instruments 3D Photocorrelation Spectrometer
+- [LS Instruments 3D Photocorrelation Spectrometer](dls.md)
 - JRS Instruments Brillouin Spectrometer
 
 ### Prep Lab - 3.09
-- Vacuum Ovens
+- [Vacuum Ovens](vacuum-ovens.md)
 - Karl-Fischer titrator
 - MBraun LabMaster100 Glove Box (nitrogen-filled)
 - Rotary evaporator
 
 ### Rheology and Characterisation - 3.10
-- TA Instruments Q20 and Q2000 differential scanning calorimeters
-- Anton-Paar MCR302 rheometer
+- [TA Instruments Q20 and Q2000 differential scanning calorimeters](dscQ20.md)
+- [Anton-Paar MCR302 rheometer](anton-paar.md)
 - Rheometrics DMTA
 - Rheometrics RDS
 - TA Instruments DMA 850
@@ -62,17 +62,18 @@ This website contains standard operating procedures for SMP equipment. Articles 
 - Labortech tensile tester
 - Hot Presses
 - Furnace (20 - 3000C)
+- [Vacuum Ovens](vacuum-ovens.md)
 
 ### Spectroscopy - 3.12
-- Novocontrol dielectric spectrometer (Alpha-A) with Quatro cryosystem. 
+- [Novocontrol dielectric spectrometer (Alpha-A) with Quatro cryosystem](novocontrol-dielectric.md) 
 - Rheometrics ARES rheometer
 
 ### Level 3+ teaching - 3.13
 - Magritek Spinsolve 43 MHz Carbon benctop NMR
-- Stelar FFC benchtop NMR
+- [Stelar FFC benchtop NMR](stelar-ffc.md)
 
 ### NMR Lab - Chemistry G.02a
-- Bruker Ultra-shield-plus 400 MHz NMR
+- [Bruker Ultra-shield-plus 400 MHz NMR](bruker-nmr-diffusion.md)
 <!-- # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
