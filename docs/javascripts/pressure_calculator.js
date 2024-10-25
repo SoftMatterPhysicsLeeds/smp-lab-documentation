@@ -19,7 +19,8 @@ function convertPressure() {
 
     document.getElementById('result').innerHTML = `
                 <strong>Pressure to set:</strong><br>
-                ${tons_per_4squareinch.toFixed(2)} tons per 4inch<sup>2</sup>
+                ${psi.toFixed(2)} psi<br>
+                ${tons_per_4squareinch.toFixed(2)} tons per 4inch<sup>2</sup><br>
                 
             `;
 }

@@ -45,7 +45,28 @@ Author: Dan Baker
         }
     </style>
 
+## Pressure Conversions
+
+PSI = Tons per inch<sup>2</sup> * 2239<br>
+MPa = PSI / 145 
+
+(Remember that hot press pressure scales measure in tons per 4 inch<sup>2</sup> i.e. 4 * tons per inch<sup>2</sup>)
+
+
 ## Pressure calculator
+ 
+$P_S$ = Required Sample Pressure 
+
+$P_R$ = Ram Pressure 
+
+$A_S$ = Sample Area 
+
+$A_R$ = Ram Area 
+
+$$
+    P_R = \frac{P_S  A_S}{A_R}
+$$
+
 
 <div class="calculator">
     <div class="form-group">
