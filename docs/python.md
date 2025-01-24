@@ -148,3 +148,31 @@ For working with Python files, I would recommend the following extensions:
 - Error Lens
 - Data Wrangler (requires Pandas)
 
+### Editing a .py file using a venv 
+
+1. Make a folder for analysis, or navigate to a pre-existing folder.
+2. Open VScode at that location by either a) right clicking in the folder in File Explorer and selecting 'Open with Code' or b) navigating to the folder in Powershell and typing ```code .```.
+3. Make a new .py in the folder by clicking the new file button in the explorer pane.
+    <figure markdown>
+    ![new file button in VScode](static/python/new_file.png)
+    </figure markdown>
+4. In the bottom right of the editor, next to where it says 'Python' click on the version number that's displayed and choose the environment that you actually want (it will try and do this for you...)
+    <figure markdown>
+    ![select interpreter](static/python/select_interpreter.png)
+    </figure markdown>
+
+    <figure markdown>
+    ![select interpreter](static/python/find_interpreter.png)
+    </figure markdown>
+
+    <figure markdown>
+    ![select interpreter](static/python/findpython.png)
+    </figure markdown>
+
+
+### Editing a .ipynb (Jupyter notebook) file
+
+1. Once you have made a .py file and chosen the correct interpreter (with Jupyter installed in the environment), make a new file with the '.ipynb' extension.
+2. Click 'Select Kernel' in the top right of the editor. 
+3. Choose 'Python Environments'
+4. Choose the same environment that we chose for the .py file. 
