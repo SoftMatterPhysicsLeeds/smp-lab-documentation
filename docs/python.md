@@ -81,7 +81,7 @@ uv python install
 
     ```
 
-## Installing Spyder
+## Spyder
 
 1. First activate the virtual environment you want to install Spyder in. For this example, I will be installing it in the 'analysis' venv we made before:
 
@@ -120,7 +120,7 @@ C:\Users\USERNAME\analysis\scripts\python.exe -m spyder.app.start
 Make sure to change the path to the 'python.exe' to the one that matches the environment you installed Spyder in! 
 Save this file as "spyder.bat" (you can name it whatever you like, but you need to save it as a .bat). Double click on the file in file explorer, and Spyder will open! 
 
-We can turn out .bat into a Desktop Shortcut by right clicking it and selecting "Send to - Desktop (create shortcut)". You can then change the icon of this shortcut by right clicking it, clicking 'Properties' and selecting 'Change Icon'.
+We can turn our .bat into a Desktop Shortcut by right clicking it and selecting "Send to - Desktop (create shortcut)". You can then change the icon of this shortcut by right clicking it, clicking 'Properties' and selecting 'Change Icon'.
 
 <figure markdown>
 ![change icon](static/python/change_icon.png)
@@ -132,3 +132,19 @@ If you want this to be the 'Spyder' icon, the go to: "your_environment_name\Lib\
 <figure markdown>
 ![change icon](static/python/icon.png)
 </figure markdown>
+
+## VSCode
+
+### Installation
+
+Go to the <a href="https://code.visualstudio.com/" target="_blank">VSCode Website</a> and click 'Download for Windows'. Double click the installer, and install! It's a good idea to tick the box(es) to add 'Open with Code' to File Explorer. 
+
+### Extensions
+
+For working with Python files, I would recommend the following extensions: 
+
+- Python
+- Jupyter
+- Error Lens
+- Data Wrangler (requires Pandas)
+
