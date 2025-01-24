@@ -37,10 +37,45 @@ We would like to be able to access the uv binary from wherever we are in our use
 
 To install Python using uv, type this into Powershell: 
 
-``` powershell
+``` shell
+
 uv python install
 ```
 
+### Setting up a virtual environment for data analysis
 
-## Setting up a virtual environment for data analysis
+!!! warning
+    By default, Windows will not allow you to run 'scripts' in Powershell. This means you will not be able to 'activate' your virtual environment. To solve this, enter the following in Powershell:
+    ``` shell
+    
+    Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+    ```
 
+1. Open Powershell and navigate to the folder you would like to install your environment in (it doesn't matter where, as long as you know!)
+
+2. Create a virtual environment as follows (I will be naming it 'analysis' but you can name it whatever you like.) 
+    ``` shell
+
+    uv venv analysis
+    ```
+    <figure markdown>
+    ![make venv](static/python/uv_venv.png)
+    </figure markdown>
+3. Activate your environment using the activate script (copy/paste the text after 'Activate with:'). In this case:
+    ``` shell
+
+        analysis\Scripts\activate
+    ```
+    If you're successful, your prompt will have the name of your venv in brackets at the beginning: 
+
+    <figure markdown>
+    ![make venv](static/python/uv_venv_activated.png)
+    </figure markdown>
+
+4. Install some 'relevant 3rd party analysis packages' (numpy, scipy, matplotlib, jupyter, pandas) using uv's package manager:
+
+    ``` shell
+
+    uv pip install numpy scipy matplotlib jupyter pandas
+
+    ```
