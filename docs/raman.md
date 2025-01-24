@@ -7,7 +7,7 @@ Author: Dan Baker
 ## :construction: Work in progress! :construction:
 
 !!! note
-    Click [here](## Laser power at sample) for measurements of laser power at the sample position 
+    Click [here](#laser-power-at-sample) for measurements of laser power at the sample position 
 
 ## Initial setup
 
