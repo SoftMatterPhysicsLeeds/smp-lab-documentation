@@ -9,6 +9,7 @@ If you're reading this, you're likely looking for an alternative to Anaconda. My
 
 ### Downloading uv
 
+
 The recommended method to install uv on Windows is with their installation script (they advise copy/pasting a command into Powershell). This method will not work on university owned PCs if you do not have admin rights. The alternative is to go to the <a href="https://github.com/astral-sh/uv/releases" target="_blank">Releases</a> page and then download the relevant version for your CPU architecture (this will almost certainly be: uv-x86_64-pc-windows-msvc.zip). Download the .zip, extract the archive, and move the folder somewhere more sensible than 'Downloads'.
 
 ### Adding uv to Path
@@ -64,7 +65,7 @@ uv python install
 3. Activate your environment using the activate script (copy/paste the text after 'Activate with:'). In this case:
     ``` shell
 
-        analysis\Scripts\activate
+        analysis\Scripts\activate.ps1
     ```
     If you're successful, your prompt will have the name of your venv in brackets at the beginning: 
 
@@ -79,3 +80,55 @@ uv python install
     uv pip install numpy scipy matplotlib jupyter pandas
 
     ```
+
+## Installing Spyder
+
+1. First activate the virtual environment you want to install Spyder in. For this example, I will be installing it in the 'analysis' venv we made before:
+
+    ``` shell
+
+    "C:\Users\USERNAME\analysis\Scripts\activate.ps1"
+    ```
+    If this is succesful, the venv name will appear in brackets at the beginning of the prompt.
+
+2. Install Spyder using uv:
+
+    ``` shell 
+
+    uv pip install spyder
+    ```
+
+3. If you're doing this on a PC you have full control of (i.e. not a university one) you can now just type 'spyder' to run Spyder. If not, this will not work because the university blocks all unsigned executables and the 'spyder' command is installed in the environment as an .exe in the Scripts folder (go look!). We can solve this by invoking the ```start``` function from the spyder module instead:
+
+    ``` shell
+
+    python -m spyder.app.start
+    ```
+
+    Spyder will then open, eventually. Should be faster when you open it again.... 
+
+### Making a shortcut to Spyder
+
+Our method of running Spyder - activating our environment and then typing ```python -m spyder.app.start``` - is a bit cumbersome and annoying. Let's change that! Open a text editor (literally anything; notepad is fine) and type: 
+
+``` 
+
+C:\Users\USERNAME\analysis\scripts\python.exe -m spyder.app.start
+
+```
+
+Make sure to change the path to the 'python.exe' to the one that matches the environment you installed Spyder in! 
+Save this file as "spyder.bat" (you can name it whatever you like, but you need to save it as a .bat). Double click on the file in file explorer, and Spyder will open! 
+
+We can turn out .bat into a Desktop Shortcut by right clicking it and selecting "Send to - Desktop (create shortcut)". You can then change the icon of this shortcut by right clicking it, clicking 'Properties' and selecting 'Change Icon'.
+
+<figure markdown>
+![change icon](static/python/change_icon.png)
+</figure markdown>
+
+If you want this to be the 'Spyder' icon, the go to: "your_environment_name\Lib\site-packages\spyder\images" and select 'windows_app_icon.ico'.
+
+
+<figure markdown>
+![change icon](static/python/icon.png)
+</figure markdown>
