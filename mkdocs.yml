@@ -20,6 +20,7 @@ nav:
   - Least Squares Fitting: least-squares-fitting.md
   - Microscopy: microscope.md
   - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
+  - Python: python.md
   - Raman: raman.md
   - Stelar FFC NMR: stelar-ffc.md
   - Universal Analysis (DSC analysis): universal-analysis.md
