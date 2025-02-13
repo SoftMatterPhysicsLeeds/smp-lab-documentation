@@ -132,6 +132,87 @@ Figure \ref{fig:sample_cell} is a schematic of the sample cell for the Novocontr
 
 ```
 
+## Tables
+
+To add a table, we can use the - you guessed it - 'Table' environment: 
+
+``` latex
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{c|c}
+         &  \\
+         & 
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+
+```
+- The `\begin{table}` and `\end{table}` lines denote the beginning and end of the figure environment. 
+- `\centering` centers the figure relative to the page.
+- The actual table is rendered within the 'tabular' block (between `\begin{tabular}` and `\end{tabular}`). The second set of `{}` after `\begin{tabular}` are used to specify the number of columns and how the text within those columns is aligned e.g. `{c|c}` means two columns with a single vertical line between with the text centered in each column. 
+- Values are added to the table using `&` between columns. The end of a row is denoted by `\\`
+- `\caption` sets the text which will be displayed under the table. This will display as "Table X: Caption Text", where X is the table number relative to the other tables in the document.
+- `\label` allows us to refer to this table in the text. 
+
+Let's imagine we have a set of Young's moduli data for some composite samples and we'd like to add this to a report:
+
+<figure markdown>
+![example table Excel](static/latex/example_table.png)
+</figure markdown>
+
+So, we need a table with 6 columns and fill it up with data. We'd also like to:
+
+1. Have the column headings in bold.
+2. Have a horzontal line separating the column headings from the data.
+3. Have the 'Average' and 'Standard Error' values for each 'orientation' span 3 rows (to centre them within the three rows that they refer to).
+
+``` latex
+
+\begin{table}[]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        &&&&&\\
+        \textbf{Orientation} & \textbf{Sample 1} & \textbf{Sample 2} & \textbf{Sample 3} & \textbf{Average} & \textbf{Standard Error}  \\
+        &\textbf{(GPa)}&\textbf{(GPa)}&\textbf{(GPa)}&\textbf{(GPa)}&\textbf{(GPa)}\\
+        &&&&&\\
+        \hline
+        &&&&& \\ 
+        0 - 1&	3.05&	2.71&	1.96&   \multirow{3}{*}{3}& \multirow{3}{*}{0.5}\\
+        0 - 2&	3.34&	3.43&	2.44&&\\
+        0 - 3&	3.28&	3.61&	3.47&&\\
+        &&&&&\\
+        45 - 1&	2.54&	2.2&	2.39&   \multirow{3}{*}{2.2}&   \multirow{3}{*}{0.4}\\
+        45 - 2&	2.43&	1.03&	2.1&&\\
+        45 - 3&	2.39&	2.38&	2.29&&\\				
+        &&&&&\\
+        90 - 1&	4.2&	3.61&	1.05&	\multirow{3}{*}{3.4} &  \multirow{3}{*}{1}\\
+        90 - 2&	3.56&	4.81&	3.98&&\\
+        90 - 3&	3.52&	2.37&	3.21&&\\
+        &&&&&\\
+        \hline
+    \end{tabular}
+    \caption{Young's modulus}
+    \label{tab:ym_table}
+\end{table}
+
+```
+
+- `\begin{tabular}{|c|c|c|c|c|c|}` says that we want 6 columns, separated by vertical lines, with the contents centred. Note we've also used vertical lines on the outsides of the columns so that the table is 'boxed'. 
+- `\hline` draws a horizontal line across the span of the table (we can use these to 'enclose' tables with a top/bottom too, as I have here).
+- `\textbf{}` makes the text within the braces bold. 
+- Values in the table are separated with `&` (if $n$ is the number of columns, there will always be $n-1$ `&`s on any particular row). If we want to leave a row entry empty, we just don't put anything between the `&` (so, we can leave a whole line empty by doing `&&&&&\\` )
+- Rows are terminated with `\\` (line break).
+- We can use the `\multirow` package (`\usepackage{multirow}` at the beginning of the document) to specify that a value should span over multiple rows (3 in our case). The value in the first set of braces indicates the number of rows to span over, the second value specifies what the width of the contents should be (use `*` to indicate that the value should span to the pre-defined width of the column), and the third is the text to actually render. So, `\multirow{3}{*}{0.5}` would render `0.5`, spanning 3 rows, using all the available width of the column. 
+
+The result looks like this: 
+
+<figure markdown>
+![Rendered table](static/latex/rendered_table.png)
+</figure markdown>
+
 ## References
 
 !!! warning
@@ -144,7 +225,7 @@ Let's say we want to reference this glorious paper: [Cooperative Intramolecular 
 1. Make a new document in the Overleaf project and call it something .bib (I'll use 'references.bib' for this example). 
 2. Copy the title of the paper and paste it into [Google Scholar](https://scholar.google.com/).
 3. Click the 'Cite' button at the bottom of the reference listing. 
-    <figure markdonw>
+    <figure markdown>
     ![cite button Google Scholar](static/latex/cite_button.png)
     </figure markdown>
 4. Click the BibTex button in the 'Cite box' that pops up. 
