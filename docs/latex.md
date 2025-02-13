@@ -1,4 +1,4 @@
-# Latex
+# $\LaTeX$
 
 ## Start a new, blank project in Overleaf
 
@@ -30,7 +30,7 @@ When 'Blank Project' is selected, Overleaf will open the editor with the followi
 
 ```
 
-All TeX functions are prefaced by backslashes. The main, required argument goes in {} and optional arguments go in []: `\examplefunction[option1, option2]{mainarg}`
+All $\LaTeX$ functions are prefaced by backslashes. The main, required argument goes in {} and optional arguments go in []: `\examplefunction[option1, option2]{mainarg}`
 
 - `\documentclass` sets the... class of the...document. There are many prebuilt examples. We can use parameters passed to this function to change various ways in which the document is formatted overall, for example, if we want the document to be a two columned article: `\documentclass[twocolumn]{article}`
 - The `\usepackage` function is used to load in extra functionality (like `import` in Python). In this case, `\usepackage{graphicx}` loads the `graphicx' package (so that images can be rendered) into the scope of the current document. 
@@ -40,7 +40,7 @@ All TeX functions are prefaced by backslashes. The main, required argument goes 
 - The main text of the document needs to go in between the `\begin{document}` and `\end{document}` function calls.
 - We can use the `\section` function to denote sections within the document (and `\subsection` and `\subsubsection`). 
 
-## Adding equations
+## Equations
 
 To add an equation, we need to create an 'equation' environment. The following is the code you would use to write the Havriliak-Negami function: 
 
@@ -74,7 +74,7 @@ and we can refer to it in the main text using its label:
 Equation \ref{eq:HN} is the Havriliak-Negami equation. 
 ```
 
-### Adding inline mathematical symbols
+### Inline mathematical symbols
 
 We often need to add 'inline' maths in the main text (to explain what the symbols mean in an equation, for example). You can invoke an inline equation environment by enclosing the things you want to render in `$$`. For example, if we wanted to explain the symbols in our Havriliak-Negami equation: 
 
@@ -90,7 +90,7 @@ $\Delta\varepsilon = \varepsilon_0 - \varepsilon_{\infty}$ is the dielectric str
 ![HN eq](static/latex/inline_maths.png)
 </figure markdown>
 
-## Adding figures
+## Figures
 
 The first thing we need to do is upload our figure to our Overleaf project. On the left hand side of the screen you should see a box with 'main.tex' in. This is our document file. We can upload a figure by dragging and dropping the file into this box, or we can use the upload button (little up-arrow). Here, I've uploaded a figure called 'samplecell.pdf': 
 
@@ -131,3 +131,50 @@ To refer to the figure in the main text, we use the `\ref` command. For example:
 Figure \ref{fig:sample_cell} is a schematic of the sample cell for the Novocontrol dielectric spectrometer.  
 
 ```
+
+## References
+
+!!! warning
+    I (Dan) don't use 'reference managers' at all. It's totally possible that your reference manager can produce a .bib that you can use in your $\LaTeX$ documents, and if you discover that it does then it would be great if you could write some instructions for doing that, and we can add them here too!
+
+References for $\LaTeX$ are managed/compiled using 'BibTeX' and references are stored in '.bib' files. 
+
+Let's say we want to reference this glorious paper: [Cooperative Intramolecular Dynamics Control the Chain-Length-Dependent Glass Transition in Polymers](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.12.021047) in our document: 
+
+1. Make a new document in the Overleaf project and call it something .bib (I'll use 'references.bib' for this example). 
+2. Copy the title of the paper and paste it into [Google Scholar](https://scholar.google.com/).
+3. Click the 'Cite' button at the bottom of the reference listing. 
+    <figure markdonw>
+    ![cite button Google Scholar](static/latex/cite_button.png)
+    </figure markdown>
+4. Click the BibTex button in the 'Cite box' that pops up. 
+    <figure markdonw>
+    ![cite box Scholar](static/latex/scholar_cite_box.png)
+    </figure markdown>
+5. Copy the whole text of the resulting reference and paste it into your .bib file. 
+    <figure markdonw>
+    ![ref in bibtex file](static/latex/ref_in_bib.png)
+    </figure markdown>
+
+6. Add the following lines just before the `\end{document}` call (rename 'references' to whatever your bib is called).
+    ``` latex
+    \bibliographystyle{ieeetr}
+    \bibliography{references}
+
+    ```
+
+    `\bibiographystyle` sets the style of the bibliography (...) and `\bibliography` loads the actual references (this won't work without a style).
+
+7. We can now refer to our paper using its 'handle': the bit of text just after the @article definition - in this case, 'baker2022cooperative': 
+    
+    ``` latex
+
+    The only correct theory about the relationship between $T_{g}$ and $M_{w} \cite{baker2022cooperative} states that... 
+
+
+    ```
+    <figure markdonw>
+    ![ref in bibtex file](static/latex/completed_ref.png)
+    </figure markdown>
+
+
