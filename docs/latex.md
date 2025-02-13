@@ -47,17 +47,19 @@ To add an equation, we need to create an 'equation' environment. The following i
 ``` latex
 
 \begin{equation}
-    \varepsilon^{*}(\omega) = \varepsilon_{\inf} + 
+    \varepsilon^{*}(\omega) = \varepsilon_{\infty} + 
     \frac{\Delta\varepsilon}
     {(1 + (i\omega\tau_{\mathrm{HN}})^{\alpha})^{\beta}}
     \label{eq:HN}
 \end{equation}
 
 ```
+
 - The `\begin{equation}` and `\end{equation}` lines denote the beginning and end of the equation environment. 
 - We can type various symbols by using a backslash and the symbol name (there are loads of 'symbol lists' online and Overleaf has a 'symbol palette'). For example, β would be `\beta`.
 - Subscripts and superscripts are rendered using the `_` and `^` symbols. If there are more than one symbol/letter to go in the superscript then you should encase the super-/subscripts in curly braces. For example, to write alpha, subscript 'n', superscript 'tau' you would write: `\alpha_{n}^{3\tau}`.
-
+- We can use `\mathrm{}` to remove the 'mathsy formatting' for letters (i.e. in this case we don't want 'HN' to be italicised). 
+- If you want your equation to be 'un-numbered' then you can enclose the equation in `\begin{equation*}` and `\end{equation*}` instead.
 
 This equation renders as: 
 
@@ -65,8 +67,30 @@ This equation renders as:
 ![HN eq](static/latex/HN_eq.png)
 </figure markdown>
 
+and we can refer to it in the main text using its label: 
 
-## Adding a figure
+```latex
+
+Equation \ref{eq:HN} is the Havriliak-Negami equation. 
+```
+
+### Adding inline mathematical symbols
+
+We often need to add 'inline' maths in the main text (to explain what the symbols mean in an equation, for example). You can invoke an inline equation environment by enclosing the things you want to render in `$$`. For example, if we wanted to explain the symbols in our Havriliak-Negami equation: 
+
+``` latex
+
+where $\varepsilon^{*}$ is the complex dielectric permittivity, 
+$\varepsilon_{\infty}$ is the permittivity as frequency tends to infinity, 
+$\Delta\varepsilon = \varepsilon_0 - \varepsilon_{\infty}$ is the dielectric strength...  
+
+```
+
+<figure markdown>
+![HN eq](static/latex/inline_maths.png)
+</figure markdown>
+
+## Adding figures
 
 The first thing we need to do is upload our figure to our Overleaf project. On the left hand side of the screen you should see a box with 'main.tex' in. This is our document file. We can upload a figure by dragging and dropping the file into this box, or we can use the upload button (little up-arrow). Here, I've uploaded a figure called 'samplecell.pdf': 
 
