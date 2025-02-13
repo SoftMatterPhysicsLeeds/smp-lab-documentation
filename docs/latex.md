@@ -169,7 +169,7 @@ Let's say we want to reference this glorious paper: [Cooperative Intramolecular 
     
     ``` latex
 
-    The only correct theory about the relationship between $T_{g}$ and $M_{w} \cite{baker2022cooperative} states that... 
+    The only correct theory about the relationship between $T_{g}$ and $M_{w}$ \cite{baker2022cooperative} states that... 
 
 
     ```
