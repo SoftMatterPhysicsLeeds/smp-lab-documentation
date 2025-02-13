@@ -58,6 +58,7 @@ To add an equation, we need to create an 'equation' environment. The following i
 - The `\begin{equation}` and `\end{equation}` lines denote the beginning and end of the equation environment. 
 - We can type various symbols by using a backslash and the symbol name (there are loads of 'symbol lists' online and Overleaf has a 'symbol palette'). For example, β would be `\beta`.
 - Subscripts and superscripts are rendered using the `_` and `^` symbols. If there are more than one symbol/letter to go in the superscript then you should encase the super-/subscripts in curly braces. For example, to write alpha, subscript 'n', superscript 'tau' you would write: `\alpha_{n}^{3\tau}`.
+- `\frac{}{}` allows us to display fractions as $\frac{a}{b}$ rather than $a/b$. Numerator goes in the first set of braces, denominator goes in the second. 
 - We can use `\mathrm{}` to remove the 'mathsy formatting' for letters (i.e. in this case we don't want 'HN' to be italicised). 
 - If you want your equation to be 'un-numbered' then you can enclose the equation in `\begin{equation*}` and `\end{equation*}` instead.
 
@@ -89,6 +90,57 @@ $\Delta\varepsilon = \varepsilon_0 - \varepsilon_{\infty}$ is the dielectric str
 <figure markdown>
 ![HN eq](static/latex/inline_maths.png)
 </figure markdown>
+
+
+### Useful extra equation stuff
+
+Let's say we wanted to put brackets around the fraction in our Havriliak-Negami equation. If we just add brackets like this: 
+
+
+``` latex
+
+\begin{equation}
+    \varepsilon^{*}(\omega) = \varepsilon_{\infty} + 
+    (\frac{\Delta\varepsilon}
+    {(1 + (i\omega\tau_{\mathrm{HN}})^{\alpha})^{\beta}})
+    \label{eq:HN}
+\end{equation}
+
+```
+
+then the result looks a bit sad...
+
+
+<figure markdown>
+![HN eq](static/latex/sad_brackets.png)
+</figure markdown>
+
+We can fix this by using the `\left` and `\right` labels before our left and right brackets and they will resize nicely! So: 
+
+
+``` latex
+
+\begin{equation}
+    \varepsilon^{*}(\omega) = \varepsilon_{\infty} + 
+    \left(\frac{\Delta\varepsilon}
+    {(1 + (i\omega\tau_{\mathrm{HN}})^{\alpha})^{\beta}}\right)
+    \label{eq:HN}
+\end{equation}
+
+```
+
+which looks much better!
+
+
+<figure markdown>
+![HN eq](static/latex/happy_equation.png)
+</figure markdown>
+
+
+
+
+
+
 
 ## Figures
 
