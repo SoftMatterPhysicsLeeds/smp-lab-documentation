@@ -40,6 +40,8 @@ All $\LaTeX$ functions are prefaced by backslashes. The main, required argument 
 - The main text of the document needs to go in between the `\begin{document}` and `\end{document}` function calls.
 - We can use the `\section` function to denote sections within the document (and `\subsection` and `\subsubsection`). 
 
+Comments are denoted by `%` - text after a `%` on a particular line will not be compiled by `$LaTeX`, so you can use these to write notes about the function of a particular line, for example.
+
 ## Equations
 
 To add an equation, we need to create an 'equation' environment. The following is the code you would use to write the Havriliak-Negami function: 
@@ -370,5 +372,16 @@ Ever advancing developments in computational power....
 - `\chapter{Introduction}` sets the title of the Chapter. 
 - `\graphicspath{Introduction/IntroductionFigs}` adds `Introduction/IntroductionFigs` to the path that $\LaTeX$ uses to look for figures when we include them. This means we can include figures directly by their filename without having to include their entire path (e.g. `\subfigure[]{{\includegraphics[width=3.2in, angle=-0]{ScaleCartoon.eps}}}`). We don't have to do this - we could also call them by using their whole path (e.g. `\subfigure[]{{\includegraphics[width=1.6in, angle=-0]{Introduction/IntroductionFigs/ScaleCartoon.eps}}}`).
 
-If we go back to `thesis.tex` and scroll down to just after the `\mainmatter` call, then we can see our Introduction chapter included: `\include{Introduction/Introduction.tex}`
+If we go back to `thesis.tex` and scroll down to just after the `\mainmatter` call, then we can see our Introduction chapter included: `\include{Introduction/Introduction.tex}`. If we wanted to add another chapter, we could make a new folder called, for example `Chapter 2` and put a `Chapter2.tex` file in the folder. If we wanted, we could also add a folder for figures: `Chapter2Figs`. We could then add the following to `Chapter2.tex`:
 
+``` LaTeX
+
+%=== Chapter Two ===
+\chapter{Chapter 2: Electric Boogaloo}
+\graphicspath{{Chapter2/Chapter2Figs/}}
+
+\section{More Science}
+ blah blah blah blah
+```
+
+and add it to our thesis by including it in `thesis.tex`, by writing the line `\include{Chapter2/Chapter2.tex}` under the include statement for the first chapter.
