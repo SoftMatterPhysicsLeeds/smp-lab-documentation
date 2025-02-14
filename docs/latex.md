@@ -150,7 +150,7 @@ To add this into our document, we need to make a 'figure' environment, and load 
 
 ``` latex
 
-\begin{figure}
+\begin{figure}[]
     \centering
     \includegraphics[width=0.8\linewidth]{samplecell.pdf}
     \caption{Sample cell for the Novocontrol dielectric spectrometer.}
@@ -159,7 +159,7 @@ To add this into our document, we need to make a 'figure' environment, and load 
 
 ```
 
-- The `\begin{figure}` and `\end{figure}` lines denote the beginning and end of the figure environment. 
+- The `\begin{figure}` and `\end{figure}` lines denote the beginning and end of the figure environment. We can use the square brackets after the `\begin{figure}` call to specify the priority that $\LaTeX$ should use when positioning the figure on the page. For example, if we use `\begin{figure}[htbp]`, this means, first, $\LaTeX$ will try to place the figure 'here' (i.e. the position in the text where the figure is called), and then the 'top', 'bottom', and finally a whole 'page'.
 - `\centering` centers the figure relative to the page. 
 - `\includegraphics` loads the figure itself (main argument in {}). Here, we have used an optional argument to specify that the width of the figure should be 0.8 times the `\linewidth` parameter, which sets the maximum length of a line. By setting the width relative to `\linewidth`, the figure will automatically scale if we, for example, decide to change the margins of the document. 
 - `\caption` sets the text which will be displayed under the figure. This will display as "Figure X: Caption Text", where X is the figure number relative to the other figures in the document. This means you don't have to worry about numbering figures!
@@ -197,8 +197,8 @@ To add a table, we can use the - you guessed it - 'Table' environment:
 \end{table}
 
 ```
-- The `\begin{table}` and `\end{table}` lines denote the beginning and end of the figure environment. 
-- `\centering` centers the figure relative to the page.
+- The `\begin{table}` and `\end{table}` lines denote the beginning and end of the table environment. We can use the square brackets after the `\begin{table}` call to specify the priority that $\LaTeX$ should use when positioning the table on the page. For example, if we use `\begin{table}[htbp]`, this means, first, $\LaTeX$ will try to place the table 'here' (i.e. the position in the text where the table is called), and then the 'top', 'bottom', and finally a whole 'page'. 
+- `\centering` centers the table relative to the page.
 - The actual table is rendered within the 'tabular' block (between `\begin{tabular}` and `\end{tabular}`). The second set of `{}` after `\begin{tabular}` are used to specify the number of columns and how the text within those columns is aligned e.g. `{c|c}` means two columns with a single vertical line between with the text centered in each column. 
 - Values are added to the table using `&` between columns. The end of a row is denoted by `\\`
 - `\caption` sets the text which will be displayed under the table. This will display as "Table X: Caption Text", where X is the table number relative to the other tables in the document.
@@ -306,4 +306,69 @@ Let's say we want to reference this glorious paper: [Cooperative Intramolecular 
     ![ref in bibtex file](static/latex/completed_ref.png)
     </figure markdown>
 
+
+## Leeds Thesis Template
+
+In this section, I'm going to explain how to get started with the 'Leeds Thesis Template' that has been going around since 2003 or so. I won't explain literally every command but this should allow you to start writing... 
+
+To start a new project using the Leeds Thesis Template: 
+
+1. Download the latest .zip of the template from our Teams space (General -> Files)
+2. Go to [Overleaf](https://www.overleaf.com) and click 'New Project'.
+3. Click 'Upload Project' 
+4. Drag .zip into the window / click to browse your PC for the .zip. 
+
+## Project Structure
+
+- `thesis.tex` is the 'entry point' for the thesis. You could, technically, add all your text / images etc into this file and have your entire thesis in one big file, but that would be a complete nightmare... 
+- `Classes\myThesis.cls` is the custom document class for this template (it is loaded at the top of `thesis.tex`: `\documentclass[twoside,12pt]{Classes/myThesis}`). This class defines custom environments for the Acknowledgements, Abstract, etc and also sets the spacing for the title page, loads packages and so on. 
+- If you scroll down `thesis.tex` you will see some `\include` statements (starting on line 49 with `\include{Dedication/dedication}`). Include statements allow you to include other .tex files as if you have copy/pasted their contents straight into `thesis.tex`. This allows us to separate different sections of our thesis into separate files which helps with organisation but also with compile time: when your thesis starts getting large (multiple chapters, lots of figures etc etc) then it can take a while to compile the whole thesis, which is annoying when you're trying to see how a particular edit is affecting the document. To solve this, you can comment out (add `%` to the beginning of the line) the `\include` statements of chapters/sections you aren't currently editing and that will make the resulting .pdf render faster!
+- Each of the included .tex files has its own folder, but this is completely arbitrary. If you wanted to make things even simpler, you could just make a big folder called 'StuffAtBeginning' and stick all the .tex files for the Acknowledgements, Abstract etc in there instead. You would then just change the `\include` statements to have the correct path: 
+    
+    ``` latex
+    ...
+    \include{StuffAtBeginning/dedication}
+    \addcontentsline{toc}{chapter}{Acknowledgement}
+    \include{StuffAtBeginning/acknowledgement}
+    \addcontentsline{toc}{chapter}{Abstract}
+    \include{StuffAtBeginning/abstract}
+    \addcontentsline{toc}{chapter}{Abbreviations}
+    \include{StuffAtBeginning/Abbreviations}
+    ...
+
+    ```
+
+## Adding a chapter
+
+If you look at the project structure window (left hand side), you'll see that there is already an `Introduction` folder. If we open `Introduction\Introduction.tex`, we get an example of how to add text / figures to a chapter: 
+
+``` LaTeX
+
+%=== Chapter One ===
+\chapter{Introduction}
+\graphicspath{{Introduction/IntroductionFigs/}}
+
+\section{Introduction}
+
+Ever advancing developments in computational power....
+
+\begin{figure}[htbp]
+\begin{center}
+  \mbox{
+     \subfigure[]{{\includegraphics[width=3.2in, angle=-0]{ScaleCartoon.eps}}}
+     \subfigure[]{{\includegraphics[width=1.6in, angle=-0]{Introduction/IntroductionFigs/ScaleCartoon.eps}}}
+       }
+   \caption{Simulation Scale Cartoon \citep{nielsen2004cgm}.}
+   \label{fig:Simscale}
+\end{center}
+\end{figure}
+
+\subsection{Background}
+
+```
+
+- `\chapter{Introduction}` sets the title of the Chapter. 
+- `\graphicspath{Introduction/IntroductionFigs}` adds `Introduction/IntroductionFigs` to the path that $\LaTeX$ uses to look for figures when we include them. This means we can include figures directly by their filename without having to include their entire path (e.g. `\subfigure[]{{\includegraphics[width=3.2in, angle=-0]{ScaleCartoon.eps}}}`). We don't have to do this - we could also call them by using their whole path (e.g. `\subfigure[]{{\includegraphics[width=1.6in, angle=-0]{Introduction/IntroductionFigs/ScaleCartoon.eps}}}`).
+
+If we go back to `thesis.tex` and scroll down to just after the `\mainmatter` call, then we can see our Introduction chapter included: `\include{Introduction/Introduction.tex}`
 
