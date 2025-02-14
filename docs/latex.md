@@ -318,7 +318,7 @@ To start a new project using the Leeds Thesis Template:
 3. Click 'Upload Project' 
 4. Drag .zip into the window / click to browse your PC for the .zip. 
 
-## Project Structure
+### Project Structure
 
 - `thesis.tex` is the 'entry point' for the thesis. You could, technically, add all your text / images etc into this file and have your entire thesis in one big file, but that would be a complete nightmare... 
 - `Classes\myThesis.cls` is the custom document class for this template (it is loaded at the top of `thesis.tex`: `\documentclass[twoside,12pt]{Classes/myThesis}`). This class defines custom environments for the Acknowledgements, Abstract, etc and also sets the spacing for the title page, loads packages and so on. 
@@ -338,7 +338,7 @@ To start a new project using the Leeds Thesis Template:
 
     ```
 
-## Adding a chapter
+### Adding a chapter
 
 If you look at the project structure window (left hand side), you'll see that there is already an `Introduction` folder. If we open `Introduction\Introduction.tex`, we get an example of how to add text / figures to a chapter: 
 
