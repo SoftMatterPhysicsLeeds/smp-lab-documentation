@@ -92,7 +92,7 @@ $\Delta\varepsilon = \varepsilon_0 - \varepsilon_{\infty}$ is the dielectric str
 </figure markdown>
 
 
-### Useful extra equation stuff
+### Full-size brackets
 
 Let's say we wanted to put brackets around the fraction in our Havriliak-Negami equation. If we just add brackets like this: 
 
@@ -135,10 +135,6 @@ which looks much better!
 <figure markdown>
 ![HN eq](static/latex/happy_equation.png)
 </figure markdown>
-
-
-
-
 
 
 
