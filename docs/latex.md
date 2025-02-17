@@ -396,3 +396,31 @@ We can structure the 'thesis' project in a completely different way. For example
 </figure markdown>
 
 In this new structure, we have all the figures, front matter, chapters and references in relevant folders. If we want to add a new chapter, we'd just add a new `.tex` file to the `Chapters` folder and set the `\graphicspath` to a new folder in the `Figures` folder. We could then include the new chapter in the thesis by adding `\include{Chapters/NewChapter}` to `thesis.tex`.
+
+## Compile $\LaTeX$ without Overleaf 
+
+So far we have only considered Overleaf as an option for compiling $\LaTeX$ documents, but that isn't the only option. The following are instructions for how to compile $\LaTeX$ documents on your PC (well, one of the many ways...): 
+
+1. Download [MikTek](https://miktex.org/download) and install it as a user (you don't need admin rights or AppsAnywhere or permission from the king). At some point it will give you a choice whether you want to 'Install missing packages on-the-fly' or not; for the most 'Overleaf-like' experience, I would say 'yes'. 
+2. Open PowerShell and change directory, `cd`, to a folder containing the document you want to compile. As an example, let's go to a thesis folder: 
+    
+    ``` PowerShell
+    cd "C:\Users\YourUsername\Thesis"
+
+    ```
+
+3. We now need to:
+    - run `pdflatex` to generate some output files,
+    - run `bibtek` on the `.aux` file that was generated to sort the references, 
+    - run `pdflatex` two more times to sort internal references and to link the biliography properly. 
+
+    In one line (assuminig our `.tex` file is called `thesis.tex`): 
+
+    ``` PowerShell
+    
+    pdflatex.exe .\thesis.tex && bibtex.exe thesis.aux && pdflatex.exe .\thesis.tex && pdflatex.exe .\thesis.tex
+
+    ```
+
+
+This will be quite slow the first time (MikTek will probably have to download some packages), but subsequent compilations should be much faster (my thesis compiles from 'scratch' in about 10 seconds). 
