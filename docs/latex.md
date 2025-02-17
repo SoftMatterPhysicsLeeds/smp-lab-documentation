@@ -279,11 +279,11 @@ Let's say we want to reference this glorious paper: [Cooperative Intramolecular 
     ![cite button Google Scholar](static/latex/cite_button.png)
     </figure markdown>
 4. Click the BibTex button in the 'Cite box' that pops up. 
-    <figure markdonw>
+    <figure markdown>
     ![cite box Scholar](static/latex/scholar_cite_box.png)
     </figure markdown>
 5. Copy the whole text of the resulting reference and paste it into your .bib file. 
-    <figure markdonw>
+    <figure markdown>
     ![ref in bibtex file](static/latex/ref_in_bib.png)
     </figure markdown>
 
@@ -304,7 +304,7 @@ Let's say we want to reference this glorious paper: [Cooperative Intramolecular 
 
 
     ```
-    <figure markdonw>
+    <figure markdown>
     ![ref in bibtex file](static/latex/completed_ref.png)
     </figure markdown>
 
@@ -385,3 +385,14 @@ If we go back to `thesis.tex` and scroll down to just after the `\mainmatter` ca
 ```
 
 and add it to our thesis by including it in `thesis.tex`, by writing the line `\include{Chapter2/Chapter2.tex}` under the include statement for the first chapter.
+
+
+## New Thesis Template
+
+We can structure the 'thesis' project in a completely different way. For example, we could structure it like this: 
+
+<figure markdown>
+![new thesis structure](static/latex/new_thesis_template_structure.png)
+</figure markdown>
+
+In this new structure, we have all the figures, front matter, chapters and references in relevant folders. If we want to add a new chapter, we'd just add a new `.tex` file to the `Chapters` folder and set the `\graphicspath` to a new folder in the `Figures` folder. We could then include the new chapter in the thesis by adding `\include{Chapters/NewChapter}` to `thesis.tex`.
