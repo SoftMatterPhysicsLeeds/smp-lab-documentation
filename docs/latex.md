@@ -138,7 +138,73 @@ which looks much better!
 ![HN eq](static/latex/happy_equation.png)
 </figure markdown>
 
+### Dealing with long equations
 
+Sometimes we have to write equations that are longer (or close to) the line width. For example, let's write the Ericksen-Leslie solution for viscosity in nematic liquid crystals: 
+
+``` latex
+
+\begin{equation}
+    \sigma_{\alpha\beta} 
+    = \alpha_1\left(n_\alpha n_\beta n_\mu n_Q A_{\mu Q}\right)
+    + \alpha_2\left(n_\alpha N_\beta\right)
+    + \alpha_3\left(n_\beta N_\alpha\right)
+    + \alpha_4\left(A_{\alpha\beta}\right) 
+    + \alpha_5\left(n_\alpha n_\mu A_{\mu\beta}\right)
+    + \alpha_6\left(n_\beta n_\mu A_{\mu\alpha}\right)
+\end{equation}
+
+```
+
+This renders as: 
+
+<figure markdown>
+![HN eq](static/latex/long_equation.png)
+</figure markdown>
+
+which doesn't look totally awful, but is long enough that it pushes the equation number to the next line and isn't completely ideal... One way to solve this problem is to split the equation on to multiple lines and align those lines with a fixed reference point. We can do this with the `amsmath` package: `\usepackage{amsmath}` and the `\split` environment it provides: 
+
+``` latex
+
+\begin{equation}
+    \begin{split}
+    \sigma_{\alpha\beta} 
+    & = \alpha_1\left(n_\alpha n_\beta n_\mu n_Q A_{\mu Q}\right) \\
+    & + \alpha_2\left(n_\alpha N_\beta\right) \\
+    & + \alpha_3\left(n_\beta N_\alpha\right)\\
+    & + \alpha_4\left(A_{\alpha\beta}\right) \\
+    & + \alpha_5\left(n_\alpha n_\mu A_{\mu\beta}\right)\\
+    & + \alpha_6\left(n_\beta n_\mu A_{\mu\alpha}\right)\\
+    \end{split}
+\end{equation}
+
+```
+
+The `&` symbol sets the point at which each line in the split will be aligned to (here I've chosen this to be at the equals sign for the first line and the plus signs thereafter). As usual, the `\\` symbol denotes a new line. This results in: 
+
+<figure markdown>
+![HN eq](static/latex/full_split_equation.png)
+</figure markdown>
+
+We can pick an choose where to do this alignment. If we wanted two terms per line instead, and align the plus signs with the first $\alpha$ symbol rather than the equals sign:
+
+``` latex
+\begin{equation}
+    \begin{split}
+    \sigma_{\alpha\beta} 
+     = & \alpha_1\left(n_\alpha n_\beta n_\mu n_Q A_{\mu Q}\right) 
+      + \alpha_2\left(n_\alpha N_\beta\right) \\
+    & + \alpha_3\left(n_\beta N_\alpha\right)
+      + \alpha_4\left(A_{\alpha\beta}\right) \\
+    & + \alpha_5\left(n_\alpha n_\mu A_{\mu\beta}\right)
+      + \alpha_6\left(n_\beta n_\mu A_{\mu\alpha}\right)\\
+    \end{split}
+\end{equation}
+```
+
+<figure markdown>
+![HN eq](static/latex/partial_split_equation.png)
+</figure markdown>
 
 ## Figures
 
