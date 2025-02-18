@@ -317,7 +317,7 @@ $\LaTeX$ will automatically try and place floats (e.g. figures and tables) in th
 
 ``` latex
 
-"\usepackage[section]{placeins}"
+\usepackage[section]{placeins}
 
 ```
 
