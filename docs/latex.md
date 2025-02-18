@@ -309,6 +309,20 @@ Let's say we want to reference this glorious paper: [Cooperative Intramolecular 
     </figure markdown>
 
 
+## Other useful things
+
+### Force figure/table placement
+
+$\LaTeX$ will automatically try and place floats (e.g. figures and tables) in the 'place that makes most sense' in terms of page usage. If you're making a document with relatively minimal text (for a meeting or something) then this can mean that all your figures get bunched up at the end; 'correct' figure placement is subjective! If you just want your figures to appear in the position they are called (and `\begin{figure}[htbp]` isn't working), then you can include the following package to force the behaviour you (probably) want: 
+
+``` latex
+
+"\usepackage[section]{placeins}"
+
+```
+
+
+
 ## Leeds Thesis Template
 
 In this section, I'm going to explain how to get started with the 'Leeds Thesis Template' that has been going around since 2003 or so. I won't explain literally every command but this should allow you to start writing... 
