@@ -42,6 +42,29 @@ All $\LaTeX$ functions are prefaced by backslashes. The main, required argument 
 
 Comments are denoted by `%` - text after a `%` on a particular line will not be compiled by `$LaTeX`, so you can use these to write notes about the function of a particular line, for example.
 
+Some journal templates (loaded using `\documentclass`) require that the `\title` and  `\author` declarations are within the `\begin{document}` and `\end{document}` statements. It doesn't seem to matter when these statements go in general so I tend to move those statements down anyway so that the previous code block becomes:
+
+``` latex
+
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\begin{document}
+
+\title{TestBlankTemplate}
+\author{Your Name}
+\date{February 2025}
+
+\maketitle
+
+\section{Introduction}
+
+\end{document}
+
+```
+
+
+
 ## Equations
 
 To add an equation, we need to create an 'equation' environment. The following is the code you would use to write the Havriliak-Negami function: 
