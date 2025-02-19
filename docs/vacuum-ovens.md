@@ -1,6 +1,3 @@
----
-icon: material/alert
----
 # Vacuum Ovens
 
 ## :construction: Work in progress! :construction:

@@ -1,8 +1,3 @@
----
-icon: material/alert
----
-
-
 # 3D Photon Correlation Spectrometer
 Author: Dan Baker
 

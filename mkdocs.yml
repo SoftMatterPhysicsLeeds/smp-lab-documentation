@@ -9,23 +9,25 @@ copyright: "Copyright &copy; Dan Baker 2023-present"
 
 nav: 
   - Home: index.md
-  - 3D PCS: dls.md
-  - Anton Paar Rheometer: anton-paar.md
-  - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
-  - DSC: dscQ20.md
-  - Folium Rubbing Machine: folium-rubbing.md
-  - Git / Github: git.md
-  - Hot Presses: hotpress.md
-  - Latex: latex.md
-  - Least Squares Fitting: least-squares-fitting.md
-  - Microscopy: microscope.md
-  - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
-  - Python: python.md
-  - Raman: raman.md
-  - Stelar FFC NMR: stelar-ffc.md
-  - Universal Analysis (DSC analysis): universal-analysis.md
-  - Useful Tips: useful-tips.md
-  - Vacuum Ovens: vacuum-ovens.md
+  - Instruments:
+    - 3D PCS: dls.md
+    - Anton Paar Rheometer: anton-paar.md
+    - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
+    - DSC: dscQ20.md
+    - Folium Rubbing Machine: folium-rubbing.md
+    - Hot Presses: hotpress.md
+    - Microscopy: microscope.md
+    - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
+    - Raman: raman.md
+    - Stelar FFC NMR: stelar-ffc.md
+    - Vacuum Ovens: vacuum-ovens.md
+  - Software / Analysis:
+    - Git / Github: git.md
+    - Latex: latex.md
+    - Least Squares Fitting: least-squares-fitting.md
+    - Python: python.md
+    - Universal Analysis (DSC analysis): universal-analysis.md
+    - Useful Tips: useful-tips.md
 
   # - About: about.md
 theme:
@@ -34,6 +36,7 @@ theme:
     - content.code.copy
     - toc.follow
     - navigation.top
+    - navigation.sections
   icon:
     logo: material/microscope
   palette:

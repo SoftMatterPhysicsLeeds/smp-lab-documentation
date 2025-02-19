@@ -1,7 +1,3 @@
----
-icon: material/alert
----
-
 # Renishaw InVia Raman Spectrometer
 Author: Dan Baker
 ## :construction: Work in progress! :construction:
