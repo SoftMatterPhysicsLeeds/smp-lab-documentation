@@ -17,8 +17,8 @@ function convertPressure() {
 
   document.getElementById("result").innerHTML = `
                 <strong>Pressure to set:</strong><br>
-                ${psi.toFixed(2)} psi<br>
-                ${tons.toFixed(2)} ton</sup><br>
+                ${psi.toFixed(2)} psi (right hand dial)<br>
+                ${tons.toFixed(2)} ton (left hand dial)</sup><br>
 
             `;
 }
