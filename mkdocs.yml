@@ -6,28 +6,27 @@ site_author: Dan Baker
 site_url: https://softmatterphysicsleeds.github.io
 copyright: "Copyright &copy; Dan Baker 2023-present"
 
-
-nav: 
+nav:
   - Home: index.md
   - Instruments:
-    - 3D PCS: dls.md
-    - Anton Paar Rheometer: anton-paar.md
-    - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
-    - DSC: dscQ20.md
-    - Folium Rubbing Machine: folium-rubbing.md
-    - Hot Presses: hotpress.md
-    - Microscopy: microscope.md
-    - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
-    - Raman: raman.md
-    - Stelar FFC NMR: stelar-ffc.md
-    - Vacuum Ovens: vacuum-ovens.md
+      - 3D PCS: dls.md
+      - Anton Paar Rheometer: anton-paar.md
+      - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
+      - DSC: dscQ20.md
+      - Folium Rubbing Machine: folium-rubbing.md
+      - Hot Presses: hotpress.md
+      - Microscopy: microscope.md
+      - Novocontrol Dielectric Spectrometer: novocontrol-dielectric.md
+      - Raman: raman.md
+      - Stelar FFC NMR: stelar-ffc.md
+      - Vacuum Ovens: vacuum-ovens.md
   - Software / Analysis:
-    - Git / Github: git.md
-    - Latex: latex.md
-    - Least Squares Fitting: least-squares-fitting.md
-    - Python: python.md
-    - Universal Analysis (DSC analysis): universal-analysis.md
-    - Useful Tips: useful-tips.md
+      - Git / Github: git.md
+      - Latex: latex.md
+      - Least Squares Fitting: least-squares-fitting.md
+      - Python: python.md
+      - Universal Analysis (DSC analysis): universal-analysis.md
+      - Useful Tips: useful-tips.md
 
   # - About: about.md
 theme:
@@ -44,7 +43,7 @@ theme:
     - scheme: default
       primary: custom
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
@@ -52,9 +51,8 @@ theme:
       primary: custom
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode 
-    
-    
+        name: Switch to light mode
+
 extra_css:
   - stylesheets/extra.css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
@@ -76,7 +74,6 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-      
 
 extra_javascript:
   - javascripts/pressure_calculator.js
