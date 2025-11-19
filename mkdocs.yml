@@ -11,6 +11,7 @@ nav:
   - Instruments:
       - 3D PCS: dls.md
       - Anton Paar Rheometer: anton-paar.md
+      - Berek Compensator: berek-compensator.md
       - Bruker NMR (Diffusion): bruker-nmr-diffusion.md
       - DSC: dscQ20.md
       - Folium Rubbing Machine: folium-rubbing.md
