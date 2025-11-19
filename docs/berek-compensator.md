@@ -3,7 +3,7 @@ Author: Conor Blackburn
 
 This document includes instructions on how to acquire data from the Berek Compensator, as an aid for those familiar with microscopy. This document will not go over any microscope alignment and set up nor the background mathematics. **This document does not replace training on a microscope or with use of the Berek Compensator**.
 
-An example will be given below with images
+Click [here](#full-example-using-liquid-crystal-cell) for an example with images.
 
 ## Preface
 
